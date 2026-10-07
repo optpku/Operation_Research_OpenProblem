@@ -1,5 +1,7 @@
 # Simplex–Ball Intersection in Spherical and Hyperbolic Space
 
+**Proposed by:** Gábor Fejes Tóth and Yinyu Ye
+
 ## Problem
 
 In spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume?

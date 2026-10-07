@@ -1,5 +1,7 @@
 # A Multicolored Carathéodory Conjecture
 
+**Proposed by:** Benjamin Matschke and Yinyu Ye
+
 ## Problem
 
 Can an origin-containing transversal also have distinct row labels within every color class?

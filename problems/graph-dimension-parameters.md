@@ -1,5 +1,7 @@
 # Euclidean, Gram, and Positive Semidefinite Corank Graph Parameters
 
+**Proposed by:** Monique Laurent, Yinyu Ye, and Antonios Varvitsiotis
+
 ## Problem
 
 Do Euclidean dimension, Gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs?

@@ -1,5 +1,7 @@
 # Covering a Unit Cube by Smaller Cubes
 
+**Proposed by:** Włodzimierz Kuperberg and Yinyu Ye
+
 ## Problem
 
 How many cubes of edge length strictly less than one are needed to cover a unit cube when rotations are allowed?

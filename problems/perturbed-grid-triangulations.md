@@ -1,5 +1,7 @@
 # Triangulations of Perturbed Square Grids
 
+**Proposed by:** Peter Brass and Yinyu Ye
+
 ## Problem
 
 Does every tetrahedralization of a small three-dimensional perturbation of an $`n`$-point planar square grid have $`O(n^{3/2})`$ cells?

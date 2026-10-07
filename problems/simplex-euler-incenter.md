@@ -1,5 +1,7 @@
 # Incenter on the Euler Line of an n-Simplex
 
+**Proposed by:** Horst Martini and Yinyu Ye
+
 ## Problem
 
 Characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid.

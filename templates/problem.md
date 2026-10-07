@@ -1,5 +1,7 @@
 # Problem title
 
+**Proposed by:** Names of the problem proposers.
+
 ## Problem
 State the question briefly.
 

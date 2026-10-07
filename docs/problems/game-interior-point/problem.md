@@ -1,5 +1,7 @@
 # Interior-Point Algorithms for Discounted Markov Games
 
+**Proposed by:** Yinyu Ye
+
 ## Problem
 
 Can a leader-based interior-point algorithm solve discounted Markov games with only logarithmic dependence on the inverse discount gap?

@@ -1,5 +1,7 @@
 # Markov Decision Processes with an Input Discount Factor
 
+**Proposed by:** Yinyu Ye
+
 ## Problem
 
 Can discounted Markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count?

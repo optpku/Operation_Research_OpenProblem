@@ -1,5 +1,7 @@
 # Faces of a Compact Convex Set
 
+**Proposed by:** Valeriu Soltan and Yinyu Ye
+
 ## Problem
 
 Can every point of a compact convex set be represented using faces with prescribed individual dimension bounds?

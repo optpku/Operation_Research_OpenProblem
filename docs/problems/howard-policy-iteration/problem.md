@@ -1,5 +1,7 @@
 # Howard's Policy Iteration Complexity for Deterministic MDPs
 
+**Proposed by:** Yinyu Ye
+
 ## Problem
 
 Is synchronous Howard policy iteration strongly polynomial for deterministic discounted Markov decision processes with an input discount factor?

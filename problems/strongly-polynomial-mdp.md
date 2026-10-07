@@ -1,5 +1,7 @@
 # Strongly Polynomial Algorithm for General Discounted MDPs
 
+**Proposed by:** Yinyu Ye
+
 ## Problem
 
 Is there a strongly polynomial exact algorithm for general discounted Markov decision processes when the discount factor is part of the input?

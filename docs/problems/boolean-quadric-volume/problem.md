@@ -1,5 +1,7 @@
 # Volume of the Boolean Quadric Polytope
 
+**Proposed by:** Jon Lee and Yinyu Ye
+
 ## Problem
 
 Find an exact volume formula, or improved bounds, for the Boolean quadric polytope of the complete graph.

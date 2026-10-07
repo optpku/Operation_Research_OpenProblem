@@ -1,5 +1,7 @@
 # Antipodal Segments and Simplices
 
+**Proposed by:** Imre Bárány, Yinyu Ye, Endre Makai, Jr., Horst Martini, and Valeriu Soltan
+
 ## Problem
 
 Is the size of a pairwise antipodal family of segments or $`k`$-simplices in $`\mathbb R^d`$ at most $`2^{d-k}`$?

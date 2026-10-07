@@ -1,5 +1,7 @@
 # Planks Covering the Unit Ball
 
+**Proposed by:** Károly Bezdek and Yinyu Ye
+
 ## Problem
 
 How much of the unit ball can be covered by planks whose total width is less than its diameter?
