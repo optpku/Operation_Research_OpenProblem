@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Mathematical problems in geometry, combinatorial optimization, and decision processes, with precise statements, related results, and references.">
+<title>Howard&#x27;s Policy Iteration Complexity for Deterministic MDPs · Open Problems</title>
+<link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
+<script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Geometry · Optimization · Decision processes</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / Decision processes and games / OP-012</div>
+<section class="detail-head"><span class="eyebrow">OP-012</span><h1>Howard&#x27;s Policy Iteration Complexity for Deterministic MDPs</h1></section>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Decision processes and games</dd><dt>Type</dt><dd>Problem</dd><dt>Status</dt><dd>Solution claimed</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><h2 id="section-1">Problem</h2>
+<p>Is synchronous Howard policy iteration strongly polynomial for deterministic discounted Markov decision processes with an input discount factor?</p>
+<h2 id="section-2">Statement</h2>
+<p>Consider <span class="math inline">$N$</span> states and <span class="math inline">$M$</span> actions, rational costs <span class="math inline">$c(s,a)$</span>, deterministic successors <span class="math inline">$f(s,a)$</span>, and a common rational discount <span class="math inline">$0&lt;\gamma&lt;1$</span>. For a policy <span class="math inline">$\pi$</span>, solve</p>
+<div class="math block">$$v^\pi(s)=c(s,\pi(s))+\gamma v^\pi(f(s,\pi(s))).$$</div>
+<p>Then simultaneously choose actions minimizing <span class="math inline">$c(s,a)+\gamma v^\pi(f(s,a))$</span> at every state. Is the number of improving rounds bounded by a fixed polynomial in <span class="math inline">$N,M$</span>, independent of <span class="math inline">$\gamma$</span> and numerical magnitudes?</p>
+<p>Retain the current action when it is still minimizing, and use a fixed rule for other ties. A simplex rule that changes only one state per round is a different algorithm.</p>
+<h2 id="section-3">Background</h2>
+<p>Deterministic transitions simplify the model but do not make synchronous policy updates equivalent to single-action simplex pivots. Input discounts near one separate fixed-discount guarantees from numerical-data-independent bounds.</p>
+<h2 id="section-4">Known results</h2>
+<p>Ye [1] gives fixed-discount guarantees. Post and Ye [2] give a discount-independent strongly polynomial bound for a specific simplex rule on deterministic MDPs.</p>
+<p>Zhong and Ye [4], in a preprint submitted in September 2026, claim exponentially many Howard improvements on deterministic MDPs, even with two actions per state. The claim has not been independently verified here. It concerns Howard's algorithm, not the existence of a different strongly polynomial algorithm.</p>
+<h2 id="section-5">References</h2>
+<ol>
+<li>Y. Ye. <em>The simplex and policy-iteration methods are strongly polynomial for the Markov decision problem with a fixed discount rate</em>. MOR 36(4), 593–603, 2011. <a href="https://pubsonline.informs.org/doi/abs/10.1287/moor.1110.0516">Publication</a>.</li>
+<li>I. Post, Y. Ye. <em>The simplex method is strongly polynomial for deterministic Markov decision processes</em>. MOR 40(4), 859–868, 2015. <a href="https://arxiv.org/abs/1208.5083v2">arXiv:1208.5083v2</a>.</li>
+<li>T. D. Hansen, P. B. Miltersen, U. Zwick. <em>Strategy iteration is strongly polynomial for 2-player turn-based stochastic games with a constant discount factor</em>. JACM 60(1), 2013. <a href="https://arxiv.org/abs/1008.0530">arXiv:1008.0530</a>.</li>
+<li>H. Zhong, Y. Ye. <em>Policy Iteration Is Not Strongly Polynomial for Deterministic Markov Decision Processes: The Price of Algorithmic Anarchy</em>. <a href="https://arxiv.org/abs/2609.40147v1">arXiv:2609.40147v1</a>, submitted 2026-09-30.</li>
+</ol>
+</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>

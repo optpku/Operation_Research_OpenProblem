@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Mathematical problems in geometry, combinatorial optimization, and decision processes, with precise statements, related results, and references.">
+<title>Problem library · Open Problems</title>
+<link rel="icon" href="./assets/favicon.svg"><link rel="stylesheet" href="./vendor/katex/katex.min.css"><link rel="stylesheet" href="./assets/styles.css">
+<script defer src="./vendor/katex/katex.min.js"></script><script defer src="./vendor/katex/auto-render.min.js"></script><script defer src="./assets/app.js"></script></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Geometry · Optimization · Decision processes</small></span></a><nav aria-label="Main navigation"><a href="./index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><section class="hero"><div><div class="eyebrow">GEOMETRY · OPTIMIZATION · DECISION PROCESSES</div><h1>Open Problems</h1><p>A collection of mathematical problems with precise statements, related results, and references.</p><div class="buttons"><a class="button primary" href="#library">Browse problems →</a></div></div><aside class="hero-panel"><span class="big">16</span><h2>Problems in 4 research areas</h2><p>Convex geometry: 7</p><p>Discrete and combinatorial optimization: 3</p><p>Computational geometry: 1</p><p>Decision processes and games: 5</p></aside></section>
+<section id="library"><div class="section-head"><h2>Problem library</h2><span class="muted" id="count" aria-live="polite">16 problems</span></div><div class="filters"><input id="search" type="search" aria-label="Search problem text" placeholder="Search titles, keywords, references, or full text…"><select id="area" aria-label="Filter by research area"><option value="">All areas</option><option>Convex geometry</option><option>Discrete and combinatorial optimization</option><option>Computational geometry</option><option>Decision processes and games</option></select><select id="research-status" aria-label="Filter by status"><option value="">All statuses</option><option>Unconfirmed</option><option>Solution claimed</option><option>Needs clarification</option><option>Partial results</option><option>Related results</option></select></div><div class="grid"><a class="card" href="problems/antipodal-simplices/index.html" data-area="Convex geometry" data-status="Unconfirmed" data-search="op-001 antipodal-simplices antipodal segments and simplices convex geometry conjecture is the size of a pairwise antipodal family of segments or $`k`$-simplices in $`\mathbb r^d`$ at most $`2^{d-k}`$? unconfirmed 2026-10-07 # antipodal segments and simplices
+
+## problem
+
+is the size of a pairwise antipodal family of segments or $`k`$-simplices in $`\mathbb r^d`$ at most $`2^{d-k}`$?
+
+## statement
+
+let $`s_k`$ be a finite family of nondegenerate $`k`$-simplices in $`\mathbb r^d`$, and let $`p=\mathrm{conv}(\bigcup_{s\in s_k}s)`$. for every distinct pair $`s_i,s_j`$, assume there are distinct parallel supporting hyperplanes $`h_i,h_j`$ of $`p`$ such that $`s_i\subset h_i`$ and $`s_j\subset h_j`$. the hyperplanes may depend on the pair.
+
+determine whether both assertions hold:
+
+1. for segments ($`k=1`$), $`|s_1|\le2^{d-1}`$.
+2. for $`1\le k\le d-2`$, $`|s_k|\le2^{d-k}`$.
+
+containment in a supporting hyperplane does not require equality with the supporting face. the segments must have positive length. the segment case and the higher-dimensional extension are separate targets.
+
+## background
+
+the danzer–grünbaum theorem bounds an antipodal point set by $`2^d`$. replacing points with positive-dimensional objects asks whether the bound decreases systematically with the dimension of each object. pair-dependent supporting directions make a direct coordinatewise argument difficult.
+
+## known results
+
+the problem chapter [1] records at most four antipodal segments in dimension three and at most two objects when $`k=d-1`$. parallel edges or simplices in parallel faces of a parallelotope attain the conjectured sizes, showing sharpness if the bounds hold.
+
+makai–martini [3] discusses related antipodality questions. bounds on the number of strictly antipodal point pairs concern a different quantity.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.1. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+2. l. danzer, b. grünbaum. *über zwei probleme bezüglich konvexer körper von p. erdős und v. l. klee*. math. z. 79, 95–99, 1962.
+3. e. makai, jr., h. martini. *on the number of antipodal or strictly antipodal pairs of points in finite subsets of rᵈ*. [related paper in the author archive](https://users.renyi.hu/~makai/antipod2.pdf).
+4. b. grünbaum. *convex polytopes*. wiley-interscience, 1967.
+"><div class="card-meta"><span>OP-001 · Convex geometry</span><span class="pill">Conjecture</span></div><h3>Antipodal Segments and Simplices</h3><p>Is the size of a pairwise antipodal family of segments or <span class="math inline">$k$</span>-simplices in <span class="math inline">$\mathbb R^d$</span> at most <span class="math inline">$2^{d-k}$</span>?</p><div class="research">Status: Unconfirmed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/symmetric-body-points/index.html" data-area="Convex geometry" data-status="Unconfirmed" data-search="op-002 symmetric-body-points points in a centrally symmetric convex body convex geometry conjecture does every centrally symmetric convex body in dimension $`n\ge3`$ contain $`2n`$ points at pairwise distance at least $`\sqrt2`$ in its own norm? unconfirmed 2026-10-07 # points in a centrally symmetric convex body
+
+## problem
+
+does every centrally symmetric convex body in dimension $`n\ge3`$ contain $`2n`$ points at pairwise distance at least $`\sqrt2`$ in its own norm?
+
+## statement
+
+let $`c\subset\mathbb r^n`$ be compact and convex, with nonempty interior and $`c=-c`$. define
+
+```math
+\|x\|_c=\inf\{t&gt;0:x\in tc\}.
+```
+
+for every $`n\ge3`$ and every integer $`n+2\le k\le2n`$, must there exist $`p_1,\ldots,p_k\in c`$ such that
+
+```math
+\|p_i-p_j\|_c\ge\sqrt2\qquad(1\le i&lt;j\le k)?
+```
+
+it is enough to prove the case $`k=2n`$, since smaller configurations can be obtained by taking subsets. the distance is measured in the norm induced by $`c`$, not necessarily in the euclidean norm.
+
+## background
+
+the question compares finite packing in euclidean and general normed spaces. central symmetry defines a norm, but provides much less structure than the rotational symmetry of a euclidean ball.
+
+## known results
+
+for the euclidean unit ball, $`\{\pm e_1,\ldots,\pm e_n\}`$ gives $`2n`$ points with the required separation. rankin [1] studies the corresponding spherical-code problem.
+
+doyle, lagarias, and randall [2] give the related planar self-packing result with four separated points. the question here concerns arbitrary centrally symmetric bodies in dimensions at least three.
+
+## references
+
+1. r. a. rankin. *the closest packing of spherical caps in n dimensions*. proc. glasgow math. assoc. 2, 139–144, 1955. [publication](https://doi.org/10.1017/s2040618500033219).
+2. p. g. doyle, j. c. lagarias, d. randall. *self-packing of centrally symmetric convex bodies in r²*. discrete &amp; computational geometry 8, 171–189, 1992. [doi](https://doi.org/10.1007/bf02293042); [author bibliography](https://websites.umich.edu/~lagarias/publications/tilings.html).
+3. j. aczél. *solution to problem 35* (in hungarian). mat. lapok 3, 94–95, 1952.
+"><div class="card-meta"><span>OP-002 · Convex geometry</span><span class="pill">Conjecture</span></div><h3>Points in a Centrally Symmetric Convex Body</h3><p>Does every centrally symmetric convex body in dimension <span class="math inline">$n\ge3$</span> contain <span class="math inline">$2n$</span> points at pairwise distance at least <span class="math inline">$\sqrt2$</span> in its own norm?</p><div class="research">Status: Unconfirmed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/convex-set-faces/index.html" data-area="Convex geometry" data-status="Unconfirmed" data-search="op-003 convex-set-faces faces of a compact convex set convex geometry conjecture can every point of a compact convex set be represented using faces with prescribed individual dimension bounds? unconfirmed 2026-10-07 # faces of a compact convex set
+
+## problem
+
+can every point of a compact convex set be represented using faces with prescribed individual dimension bounds?
+
+## statement
+
+let $`k\subset\mathbb r^n`$ be a nonempty compact convex set. let positive integers $`n_1,\ldots,n_s`$ satisfy $`\sum_{i=1}^s n_i=n+1`$. for every $`z\in k`$, do there exist nonempty faces $`f_1,\ldots,f_s`$ such that
+
+```math
+z\in\mathrm{conv}(f_1\cup\cdots\cup f_s),\qquad \dim f_i\le n_i-1\quad(1\le i\le s)?
+```
+
+a face has the usual convex-analysis meaning: if the relative interior of a segment in $`k`$ meets $`f`$, both endpoints lie in $`f`$. the improper face $`k`$ is allowed; faces need not be exposed. dimension means affine dimension, and $`k`$ need not be full-dimensional.
+
+## background
+
+extreme-point representations use zero-dimensional faces. this problem allows higher-dimensional faces but assigns a separate dimension budget to each, connecting convex representations with the face structure of the set.
+
+## known results
+
+the problem chapter [1] states the polytopal case. if $`s=1`$, take $`f_1=k`$. if every $`n_i=1`$, the question reduces to representation by extreme points. mixed dimension budgets for general compact convex sets are the remaining target.
+
+soltan&#x27;s slides [2] discuss related face-representation results.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.10, conjecture 2. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+2. v. soltan. *carathéodory-type results for faces of convex sets*. talk on joint work with jim lawrence. [fields institute slides](https://www.fields.utoronto.ca/talk-media/1/85/64/slides.pdf).
+"><div class="card-meta"><span>OP-003 · Convex geometry</span><span class="pill">Conjecture</span></div><h3>Faces of a Compact Convex Set</h3><p>Can every point of a compact convex set be represented using faces with prescribed individual dimension bounds?</p><div class="research">Status: Unconfirmed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/plank-ball-volume/index.html" data-area="Convex geometry" data-status="Solution claimed" data-search="op-004 plank-ball-volume planks covering the unit ball convex geometry problem how much of the unit ball can be covered by planks whose total width is less than its diameter? solution claimed 2026-10-07 # planks covering the unit ball
+
+## problem
+
+how much of the unit ball can be covered by planks whose total width is less than its diameter?
+
+## statement
+
+let $`d\ge2`$ and $`b^d=\{x\in\mathbb r^d:\|x\|_2\le1\}`$. fix positive widths $`w_1,\ldots,w_m`$ with $`w=\sum_iw_i&lt;2`$. a plank of width $`w_i`$ has the form $`p_i=\{x:a_i\le u_i^tx\le a_i+w_i\}`$, where $`\|u_i\|_2=1`$.
+
+determine the maximum over all orientations and translations:
+
+```math
+\max_{p_1,\ldots,p_m}\mathrm{vol}_d\!\left(b^d\cap\bigcup_{i=1}^mp_i\right).
+```
+
+the conjectured optimum is attained by parallel planks with disjoint interiors whose union is a single plank of width $`w`$ centered at the ball&#x27;s center. the proposed value is $`\mathrm{vol}_d(b^d\cap\{|x_1|\le w/2\})`$.
+
+## background
+
+the classical plank theorem concerns complete coverings. here the width budget is too small for complete coverage, and the objective is covered volume. different orientations affect both coverage and overlap.
+
+## known results
+
+bezdek [2] discusses two-plank, three-dimensional, and some three-plank cases. a lower bound on the width needed for complete coverage does not determine the maximum partial volume.
+
+bakaev and polyanskii [3], in a preprint submitted in july 2026, claim a complete affirmative solution for euclidean balls. the claim has not been independently verified here.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.2. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+2. k. bezdek. *tarski&#x27;s plank problem revisited*. geometry: intuitive, discrete, and convex, 2013; see also *classical topics in discrete geometry*, 2010.
+3. e. bakaev, a. polyanskii. *optimal partial plank coverings*. [arxiv:2607.27483v1](https://arxiv.org/abs/2607.27483v1), submitted 2026-07-29.
+"><div class="card-meta"><span>OP-004 · Convex geometry</span><span class="pill">Problem</span></div><h3>Planks Covering the Unit Ball</h3><p>How much of the unit ball can be covered by planks whose total width is less than its diameter?</p><div class="research">Status: Solution claimed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/non-euclidean-simplex-intersection/index.html" data-area="Convex geometry" data-status="Needs clarification" data-search="op-005 non-euclidean-simplex-intersection simplex–ball intersection in spherical and hyperbolic space convex geometry problem in spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume? needs clarification 2026-10-07 # simplex–ball intersection in spherical and hyperbolic space
+
+## problem
+
+in spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume?
+
+## statement
+
+use geodesic volume in spherical space $`s^d`$ or hyperbolic space $`h^d`$. fix a geodesic ball $`b`$ and an admissible simplex volume $`v`$. for every nondegenerate geodesic $`d`$-simplex $`t`$ of volume $`v`$, is
+
+```math
+\mathrm{vol}_d(b\cap t)\le\mathrm{vol}_d(b\cap t_{\rm reg}),
+```
+
+where $`t_{\rm reg}`$ is a regular simplex of volume $`v`$ concentric with $`b`$?
+
+both geometries are included, particularly dimensions beyond two. in the spherical case, the hemisphere/convexity convention, ball radius, admissible volumes, and existence of the comparison simplex must be specified.
+
+## background
+
+euclidean symmetrization favors regular simplices in several volume problems. curvature changes this argument, while fixing the simplex volume and maximizing its intersection with a ball also requires control of relative position.
+
+## known results
+
+the problem chapter [1] records the euclidean analogue. böröczky [2] and peyerimhoff [3] study maximal-volume simplices in spherical or hyperbolic balls. those inscribed-volume results have different constraints and do not directly establish the fixed-volume intersection inequality.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.5. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+2. k. böröczky. *on an extremum property of the regular simplex in sᵈ*. intuitive geometry, 117–121, 1987.
+3. n. peyerimhoff. *simplices of maximal volume or minimal total edge length in hyperbolic space*. j. london math. soc. 66(3), 753–768, 2002.
+"><div class="card-meta"><span>OP-005 · Convex geometry</span><span class="pill">Problem</span></div><h3>Simplex–Ball Intersection in Spherical and Hyperbolic Space</h3><p>In spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume?</p><div class="research">Status: Needs clarification</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/cube-covering/index.html" data-area="Convex geometry" data-status="Unconfirmed" data-search="op-006 cube-covering covering a unit cube by smaller cubes convex geometry problem how many cubes of edge length strictly less than one are needed to cover a unit cube when rotations are allowed? unconfirmed 2026-10-07 # covering a unit cube by smaller cubes
+
+## problem
+
+how many cubes of edge length strictly less than one are needed to cover a unit cube when rotations are allowed?
+
+## statement
+
+for an integer $`n\ge2`$, let $`c=[0,1]^n`$ and define
+
+```math
+q(n)=\min\{m:c\subseteq\bigcup_{i=1}^m(a_i+r_i[0,\ell_i]^n),\quad 0&lt;\ell_i&lt;1,\ r_i\in o(n)\}.
+```
+
+the covering cubes may have different edge lengths, independent translations and rotations, and may extend outside $`c`$. determine $`q(n)`$ for general $`n`$.
+
+an exact value requires both a covering construction and a matching lower bound. restricting all cubes to be axis-parallel gives a different problem.
+
+## background
+
+free orientations can cover corners and boundary regions differently from coordinate-aligned subdivisions. the difficulty is to control the entire target boundary and to exclude all arrangements with fewer cubes.
+
+## known results
+
+the problem chapter [1] records $`q(2)=3`$ and $`q(n)\le n+1`$. the stricter axis-parallel or homothetic model requires $`2^n`$ cubes, which is not a lower bound for freely rotated coverings.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.6. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+"><div class="card-meta"><span>OP-006 · Convex geometry</span><span class="pill">Problem</span></div><h3>Covering a Unit Cube by Smaller Cubes</h3><p>How many cubes of edge length strictly less than one are needed to cover a unit cube when rotations are allowed?</p><div class="research">Status: Unconfirmed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/boolean-quadric-volume/index.html" data-area="Discrete and combinatorial optimization" data-status="Partial results" data-search="op-007 boolean-quadric-volume volume of the boolean quadric polytope discrete and combinatorial optimization problem find an exact volume formula, or improved bounds, for the boolean quadric polytope of the complete graph. partial results 2026-10-07 # volume of the boolean quadric polytope
+
+## problem
+
+find an exact volume formula, or improved bounds, for the boolean quadric polytope of the complete graph.
+
+## statement
+
+for $`n\ge2`$, set $`d=n(n+1)/2`$ and define
+
+```math
+p_n=\mathrm{conv}\{(x,y)\in\mathbb r^d:x\in\{0,1\}^n,\ y_{ij}=x_ix_j\ (1\le i&lt;j\le n)\}.
+```
+
+determine $`\mathrm{vol}_d(p_n)`$, or proved bounds $`a_n,b_n`$ with $`0&lt;a_n\le\mathrm{vol}_d(p_n)\le b_n`$. the volume is ordinary $`d`$-dimensional lebesgue volume in these coordinates, not volume multiplied by $`d!`$.
+
+all pairwise products are included, so the graph is $`k_n`$. a general formula must apply to every $`n`$. bounds should state their improvement over existing bounds and their range of validity.
+
+## background
+
+the boolean quadric polytope linearizes binary quadratic products. comparing its volume with relaxation volumes measures the extra geometric region introduced by relaxation; this differs from an integrality-gap comparison.
+
+## known results
+
+the standard relaxation $`q_n`$ is defined, for every $`i&lt;j`$, by
+
+```math
+y_{ij}\ge0,\quad y_{ij}\le x_i,\quad y_{ij}\le x_j,\quad x_i+x_j\le1+y_{ij}
+```
+
+ko, lee, and steingrímsson [1] give the relaxation-volume formula
+
+```math
+\mathrm{vol}_d(q_n)=\frac{2^{2n-d}n!}{(2n)!}.
+```
+
+since $`p_n\subseteq q_n`$, this supplies an upper bound.
+
+lee and skipper [2] study sparse-graph relaxation volumes. lee [3] claims exact volume computation for series-parallel graphs. general $`k_n`$ with $`n\ge4`$ is not series-parallel, so that result does not cover the general complete-graph problem.
+
+## references
+
+1. c.-w. ko, j. lee, e. steingrímsson. *the volume of relaxed boolean-quadric and cut polytopes*. discrete mathematics 163, 293–298, 1997. [publication](https://www.sciencedirect.com/science/article/pii/0012365x9500343u).
+2. j. lee, d. skipper. *volume computation for sparse boolean quadric relaxations*. [arxiv:1703.02444v4](https://arxiv.org/abs/1703.02444v4).
+3. j. lee. *exact volume computation for boolean quadric polytopes of series-parallel graphs*. [arxiv:2610.00734v1](https://arxiv.org/abs/2610.00734v1), submitted 2026-09-30.
+4. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.7. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+"><div class="card-meta"><span>OP-007 · Discrete and combinatorial optimization</span><span class="pill">Problem</span></div><h3>Volume of the Boolean Quadric Polytope</h3><p>Find an exact volume formula, or improved bounds, for the Boolean quadric polytope of the complete graph.</p><div class="research">Status: Partial results</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/perturbed-grid-triangulations/index.html" data-area="Computational geometry" data-status="Needs clarification" data-search="op-008 perturbed-grid-triangulations triangulations of perturbed square grids computational geometry conjecture does every tetrahedralization of a small three-dimensional perturbation of an $`n`$-point planar square grid have $`o(n^{3/2})`$ cells? needs clarification 2026-10-07 # triangulations of perturbed square grids
+
+## problem
+
+does every tetrahedralization of a small three-dimensional perturbation of an $`n`$-point planar square grid have $`o(n^{3/2})`$ cells?
+
+## statement
+
+let $`n=m^2`$ and let $`g_m=\{(i,j,0):1\le i,j\le m\}\subset\mathbb r^3`$. perturb the points slightly to obtain $`p`$ with no four points coplanar.
+
+for every tetrahedralization $`\mathcal t`$ of the convex hull with vertex set $`p`$ and no added steiner points, is there a uniform bound
+
+```math
+|\mathcal t|\le cn^{3/2}=cm^3.
+```
+
+the displacement allowed relative to the grid spacing and $`m`$, and the permitted dependencies of $`c`$, must be specified. the target concerns every tetrahedralization, not the existence of a small one or only delaunay tetrahedralizations.
+
+## background
+
+three-dimensional tetrahedralizations of the same point set can vary greatly in size. a near-planar grid combines regular placement with three-dimensional nondegeneracy, testing whether that structure prevents quadratic worst-case size.
+
+## known results
+
+edelsbrunner, preparata, and west [2] give small-tetrahedralization constructions, and avis and elgindy [3] study size variation. existence of one small tetrahedralization does not bound all of them.
+
+the problem chapter [1] also mentions an $`o(n^{5/3})`$ result for grid cubes, a different point configuration.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.3. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+2. h. edelsbrunner, f. p. preparata, d. b. west. *tetrahedrizing point sets in three dimensions*. j. symbolic comput. 10, 335–347, 1990.
+3. d. avis, h. elgindy. *triangulating point sets in space*. discrete comput. geom. 2, 99–111, 1987.
+"><div class="card-meta"><span>OP-008 · Computational geometry</span><span class="pill">Conjecture</span></div><h3>Triangulations of Perturbed Square Grids</h3><p>Does every tetrahedralization of a small three-dimensional perturbation of an <span class="math inline">$n$</span>-point planar square grid have <span class="math inline">$O(n^{3/2})$</span> cells?</p><div class="research">Status: Needs clarification</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/simplex-euler-incenter/index.html" data-area="Convex geometry" data-status="Needs clarification" data-search="op-009 simplex-euler-incenter incenter on the euler line of an n-simplex convex geometry problem characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid. needs clarification 2026-10-07 # incenter on the euler line of an n-simplex
+
+## problem
+
+characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid.
+
+## statement
+
+let $`t=\mathrm{conv}\{v_0,\ldots,v_n\}\subset\mathbb r^n`$ be a nondegenerate simplex with $`n\ge3`$. write $`c`$ for the circumcenter, $`g=(n+1)^{-1}\sum_iv_i`$ for the centroid, and $`i`$ for the incenter. if $`c\ne g`$, define
+
+```math
+l(t)=\{c+t(g-c):t\in\mathbb r\}.
+```
+
+find necessary and sufficient geometric conditions for $`i\in l(t)`$ for general simplices.
+
+if $`c=g`$, these centers do not determine a unique line. this case requires a separate convention and should be included in the characterization. general simplices need not be orthocentric.
+
+## background
+
+the incenter is determined by distances to faces, the circumcenter by distances to vertices, and the centroid by vertex averaging. their collinearity relates different aspects of simplex geometry.
+
+## known results
+
+edmonds, hajja, and martini [2] treat orthocentric simplices and relates the incenter-on-euler-line property to biregularity: vertices split into two regular simplices with equal cross-group edge lengths. this is a special-class result, not a characterization of all simplices.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.8. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+2. a. e. edmonds, m. hajja, h. martini. *orthocentric simplices and biregularity*. results math. 52, 41–50, 2008. [publication](https://link.springer.com/article/10.1007/s00025-008-0294-4).
+"><div class="card-meta"><span>OP-009 · Convex geometry</span><span class="pill">Problem</span></div><h3>Incenter on the Euler Line of an n-Simplex</h3><p>Characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid.</p><div class="research">Status: Needs clarification</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/graph-dimension-parameters/index.html" data-area="Discrete and combinatorial optimization" data-status="Unconfirmed" data-search="op-010 graph-dimension-parameters euclidean, gram, and positive semidefinite corank graph parameters discrete and combinatorial optimization conjecture do euclidean dimension, gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs? unconfirmed 2026-10-07 # euclidean, gram, and positive semidefinite corank graph parameters
+
+## problem
+
+do euclidean dimension, gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs?
+
+## statement
+
+for a finite simple graph $`g=(v,e)`$, let $`ed(g)`$ be the least dimension in which every realizable set of edge-distance data can be realized. let $`gd(g)`$ be the least $`k`$ such that every partial gram matrix specified on diagonal and edge positions and admitting a positive semidefinite completion has a completion of rank at most $`k`$.
+
+let $`\mathcal c(g)`$ consist of positive semidefinite matrices with zeros at nonedge positions. define $`\nu^{=}(g)`$ as the largest corank of $`m\in\mathcal c(g)`$ satisfying the strong arnold property: a symmetric matrix $`x`$ with $`mx=0`$ and $`x_{ij}=0`$ at diagonal and edge positions must satisfy $`x=0`$.
+
+let $`\nabla g`$ be obtained by adding a vertex adjacent to every vertex of $`g`$. determine whether each inequality holds for all graphs:
+
+```math
+ed(\nabla g)\le ed(g)+1,\qquad gd(g)\le\nu^{=}(g).
+```
+
+use consistent conventions for dimension zero, edgeless graphs, and the empty graph; the reverse inequalities depend on those conventions. the two targets are independent.
+
+## background
+
+edge distances and partial inner products impose different low-dimensional realization constraints. comparing them with semidefinite corank connects graph structure, geometry, and low-rank matrix completion.
+
+## known results
+
+laurent and varvitsiotis [3] establish $`ed(\nabla g)=gd(g)`$ and discusses one-sided bounds and low-dimensional characterizations. together with the reverse inequalities recorded in [4], the proposed inequalities would yield equalities under consistent definitions. low-dimensional cases alone do not establish the universal statements.
+
+## references
+
+1. m. belk, r. connelly. *realizability of graphs*. discrete comput. geom. 37, 125–137, 2007.
+2. h. van der holst. *two tree-width-like graph invariants*. combinatorica 23(4), 633–651, 2003.
+3. m. laurent, a. varvitsiotis. *a new graph parameter related to bounded rank positive semidefinite matrix completions*. [arxiv:1204.0734](https://arxiv.org/abs/1204.0734); [preprint text](https://arxiv.org/html/1204.0734v1).
+4. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+"><div class="card-meta"><span>OP-010 · Discrete and combinatorial optimization</span><span class="pill">Conjecture</span></div><h3>Euclidean, Gram, and Positive Semidefinite Corank Graph Parameters</h3><p>Do Euclidean dimension, Gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs?</p><div class="research">Status: Unconfirmed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/multicolored-caratheodory/index.html" data-area="Discrete and combinatorial optimization" data-status="Related results" data-search="op-011 multicolored-caratheodory a multicolored carathéodory conjecture discrete and combinatorial optimization conjecture can an origin-containing transversal also have distinct row labels within every color class? related results 2026-10-07 # a multicolored carathéodory conjecture
+
+## problem
+
+can an origin-containing transversal also have distinct row labels within every color class?
+
+## statement
+
+for each integer $`r\ge2`$, does there exist $`n_0(r)`$ such that the following holds for every $`n\ge n_0(r)`$?
+
+let $`p_{ij}\in\mathbb r^n`$ for $`1\le i\le r`$ and $`1\le j\le n+1`$, with
+
+```math
+0\in\mathrm{conv}\{p_{1j},\ldots,p_{rj}\}.
+```
+
+partition the column indices as $`c_1\uplus\cdots\uplus c_m=\{1,\ldots,n+1\}`$ with $`|c_\ell|\le r-1`$. must there be row labels $`k_j\in\{1,\ldots,r\}`$ satisfying
+
+```math
+0\in\mathrm{conv}\{p_{k_1,1},\ldots,p_{k_{n+1},n+1}\},
+```
+
+and $`k_a\ne k_b`$ whenever distinct columns $`a,b`$ belong to the same color class?
+
+both the convex-hull and label constraints are required. a counterexample at one fixed $`n`$ does not refute a statement for all sufficiently large $`n`$.
+
+## background
+
+the colorful carathéodory theorem supplies origin-containing transversals without this additional label constraint. the conjecture combines convex selection with a coupled combinatorial assignment condition.
+
+## known results
+
+blagojević, matschke, and ziegler [3] prove related colored tverberg results for prime parameters. jojić, panina, and živaljević [4] treat prime powers and associated color models. their hypotheses must be compared with the exact threshold and color constraints above.
+
+the problem chapter [1] highlights $`r=4,n=9`$, but that instance is not the full asymptotic conjecture.
+
+## references
+
+1. k. bezdek, a. deza, y. ye. *selected open problems in discrete geometry and optimization*, 2013, §1.9. [chapter](https://www.cas.mcmaster.ca/~deza/fic2013b.pdf).
+2. i. bárány. *quadratically many colorful simplices*. siam j. discrete math. 24, 191–198, 2010.
+3. p. v. m. blagojević, b. matschke, g. m. ziegler. *optimal bounds for the colored tverberg problem*. jems 17, 739–754, 2015. [arxiv:0910.4987](https://arxiv.org/abs/0910.4987).
+4. d. jojić, g. panina, r. t. živaljević. *optimal colored tverberg theorems for prime powers*. [arxiv:2005.11913v3](https://arxiv.org/abs/2005.11913v3).
+"><div class="card-meta"><span>OP-011 · Discrete and combinatorial optimization</span><span class="pill">Conjecture</span></div><h3>A Multicolored Carathéodory Conjecture</h3><p>Can an origin-containing transversal also have distinct row labels within every color class?</p><div class="research">Status: Related results</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/howard-policy-iteration/index.html" data-area="Decision processes and games" data-status="Solution claimed" data-search="op-012 howard-policy-iteration howard&#x27;s policy iteration complexity for deterministic mdps decision processes and games problem is synchronous howard policy iteration strongly polynomial for deterministic discounted markov decision processes with an input discount factor? solution claimed 2026-10-07 # howard&#x27;s policy iteration complexity for deterministic mdps
+
+## problem
+
+is synchronous howard policy iteration strongly polynomial for deterministic discounted markov decision processes with an input discount factor?
+
+## statement
+
+consider $`n`$ states and $`m`$ actions, rational costs $`c(s,a)`$, deterministic successors $`f(s,a)`$, and a common rational discount $`0&lt;\gamma&lt;1`$. for a policy $`\pi`$, solve
+
+```math
+v^\pi(s)=c(s,\pi(s))+\gamma v^\pi(f(s,\pi(s))).
+```
+
+then simultaneously choose actions minimizing $`c(s,a)+\gamma v^\pi(f(s,a))`$ at every state. is the number of improving rounds bounded by a fixed polynomial in $`n,m`$, independent of $`\gamma`$ and numerical magnitudes?
+
+retain the current action when it is still minimizing, and use a fixed rule for other ties. a simplex rule that changes only one state per round is a different algorithm.
+
+## background
+
+deterministic transitions simplify the model but do not make synchronous policy updates equivalent to single-action simplex pivots. input discounts near one separate fixed-discount guarantees from numerical-data-independent bounds.
+
+## known results
+
+ye [1] gives fixed-discount guarantees. post and ye [2] give a discount-independent strongly polynomial bound for a specific simplex rule on deterministic mdps.
+
+zhong and ye [4], in a preprint submitted in september 2026, claim exponentially many howard improvements on deterministic mdps, even with two actions per state. the claim has not been independently verified here. it concerns howard&#x27;s algorithm, not the existence of a different strongly polynomial algorithm.
+
+## references
+
+1. y. ye. *the simplex and policy-iteration methods are strongly polynomial for the markov decision problem with a fixed discount rate*. mor 36(4), 593–603, 2011. [publication](https://pubsonline.informs.org/doi/abs/10.1287/moor.1110.0516).
+2. i. post, y. ye. *the simplex method is strongly polynomial for deterministic markov decision processes*. mor 40(4), 859–868, 2015. [arxiv:1208.5083v2](https://arxiv.org/abs/1208.5083v2).
+3. t. d. hansen, p. b. miltersen, u. zwick. *strategy iteration is strongly polynomial for 2-player turn-based stochastic games with a constant discount factor*. jacm 60(1), 2013. [arxiv:1008.0530](https://arxiv.org/abs/1008.0530).
+4. h. zhong, y. ye. *policy iteration is not strongly polynomial for deterministic markov decision processes: the price of algorithmic anarchy*. [arxiv:2609.40147v1](https://arxiv.org/abs/2609.40147v1), submitted 2026-09-30.
+"><div class="card-meta"><span>OP-012 · Decision processes and games</span><span class="pill">Problem</span></div><h3>Howard&#x27;s Policy Iteration Complexity for Deterministic MDPs</h3><p>Is synchronous Howard policy iteration strongly polynomial for deterministic discounted Markov decision processes with an input discount factor?</p><div class="research">Status: Solution claimed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/deterministic-game-strategy-iteration/index.html" data-area="Decision processes and games" data-status="Needs clarification" data-search="op-013 deterministic-game-strategy-iteration strategy iteration complexity for deterministic turn-based zero-sum games decision processes and games problem is simple strategy iteration polynomial, or strongly polynomial, for deterministic turn-based zero-sum discounted games? needs clarification 2026-10-07 # strategy iteration complexity for deterministic turn-based zero-sum games
+
+## problem
+
+is simple strategy iteration polynomial, or strongly polynomial, for deterministic turn-based zero-sum discounted games?
+
+## statement
+
+let $`s=s_{\min}\uplus s_{\max}`$ be a finite state set. each action has a rational immediate cost, a deterministic successor, and a common discount $`0&lt;\gamma&lt;1`$. the minimizing and maximizing players optimize the discounted total cost.
+
+consider a method alternating the leader&#x27;s local strategy improvement, analogous to one simplex pivot, with the follower&#x27;s exact best response. ask whether:
+
+1. total operations are polynomial in the complete input encoding length.
+2. a strongly polynomial bound exists in state and action counts, independent of discount and numerical magnitudes.
+
+the leader, improving-state/action selection, tie rules, and follower-response algorithm must be specified. count both outer improvement rounds and the total cost of computing follower responses.
+
+## background
+
+a second player makes improvement depend on an adversarial best response. deterministic successors retain combinatorial structure, but single-player progress arguments need not survive this interaction.
+
+## known results
+
+hansen, miltersen, and zwick [1] analyze strategy iteration for fixed-discount stochastic games. post and ye [2] treat a specific simplex rule for deterministic single-player mdps.
+
+neither the single-player theorem nor a lower bound for synchronous howard updates directly settles the local two-player method described here.
+
+## references
+
+1. t. d. hansen, p. b. miltersen, u. zwick. *strategy iteration is strongly polynomial for 2-player turn-based stochastic games with a constant discount factor*. jacm 60(1), 2013. [arxiv:1008.0530](https://arxiv.org/abs/1008.0530).
+2. i. post, y. ye. *the simplex method is strongly polynomial for deterministic markov decision processes*. mor 40(4), 859–868, 2015. [arxiv:1208.5083v2](https://arxiv.org/abs/1208.5083v2).
+3. y. ye. *the simplex and policy-iteration methods are strongly polynomial for the markov decision problem with a fixed discount rate*. mor 36(4), 593–603, 2011. [publication](https://pubsonline.informs.org/doi/abs/10.1287/moor.1110.0516).
+"><div class="card-meta"><span>OP-013 · Decision processes and games</span><span class="pill">Problem</span></div><h3>Strategy Iteration Complexity for Deterministic Turn-Based Zero-Sum Games</h3><p>Is simple strategy iteration polynomial, or strongly polynomial, for deterministic turn-based zero-sum discounted games?</p><div class="research">Status: Needs clarification</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/game-interior-point/index.html" data-area="Decision processes and games" data-status="Needs clarification" data-search="op-014 game-interior-point interior-point algorithms for discounted markov games decision processes and games problem can a leader-based interior-point algorithm solve discounted markov games with only logarithmic dependence on the inverse discount gap? needs clarification 2026-10-07 # interior-point algorithms for discounted markov games
+
+## problem
+
+can a leader-based interior-point algorithm solve discounted markov games with only logarithmic dependence on the inverse discount gap?
+
+## statement
+
+consider a finite turn-based two-player zero-sum markov game with rational costs and transition probabilities. states belong to the minimizing or maximizing player. let $`n,m`$ be the state and action counts, and let the common rational discount satisfy $`0&lt;\gamma&lt;1`$.
+
+seek an exact algorithm based on the leader&#x27;s interior-point method with iterations or arithmetic operations bounded by
+
+```math
+\mathrm{poly}\!\left(n,m,\log\frac1{1-\gamma}\right)
+```
+
+rather than a polynomial in $`1/(1-\gamma)`$.
+
+the leader/follower model, interior-point subproblems, output values or strategies, and dependencies on other numerical data must be specified. an approximate method or fixed-discount guarantee alone does not establish this exact-operation bound.
+
+## background
+
+single-player mdps admit linear-programming formulations, while two-player games add minimax and best-response structure. the question is whether an interior-point analysis can retain favorable discount dependence in that setting.
+
+## known results
+
+ye [1] gives a single-player mdp interior-point result with logarithmic discount-gap dependence. hansen et al. [2] concerns game strategy iteration, not the proposed interior-point method. zhong and ye [3] treat related robust mdps with fixed discount; this does not establish the stated general-game bound.
+
+## references
+
+1. y. ye. *a new complexity result on solving the markov decision problem*. mor 30(3), 733–749, 2005. [publication](https://pubsonline.informs.org/doi/10.1287/moor.1050.0149).
+2. t. d. hansen, p. b. miltersen, u. zwick. *strategy iteration is strongly polynomial for 2-player turn-based stochastic games with a constant discount factor*. jacm 60(1), 2013. [arxiv:1008.0530](https://arxiv.org/abs/1008.0530).
+3. h. zhong, y. ye. *linear programming representations and strongly polynomial algorithms for robust markov decision processes*. [arxiv:2610.02131v1](https://arxiv.org/abs/2610.02131v1), 2026.
+"><div class="card-meta"><span>OP-014 · Decision processes and games</span><span class="pill">Problem</span></div><h3>Interior-Point Algorithms for Discounted Markov Games</h3><p>Can a leader-based interior-point algorithm solve discounted Markov games with only logarithmic dependence on the inverse discount gap?</p><div class="research">Status: Needs clarification</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/strongly-polynomial-mdp/index.html" data-area="Decision processes and games" data-status="Unconfirmed" data-search="op-015 strongly-polynomial-mdp strongly polynomial algorithm for general discounted mdps decision processes and games problem is there a strongly polynomial exact algorithm for general discounted markov decision processes when the discount factor is part of the input? unconfirmed 2026-10-07 # strongly polynomial algorithm for general discounted mdps
+
+## problem
+
+is there a strongly polynomial exact algorithm for general discounted markov decision processes when the discount factor is part of the input?
+
+## statement
+
+let $`s`$ be a finite state set with nonempty finite action sets $`a_s`$. input data are rational rewards $`r(s,a)`$, rational transition probabilities $`p(t\mid s,a)\ge0`$ with $`\sum_{t\in s}p(t\mid s,a)=1`$, and a common rational discount $`0&lt;\gamma&lt;1`$. set $`n=|s|`$ and $`m=\sum_s|a_s|`$.
+
+output a deterministic stationary policy $`\pi`$ optimal for every initial state, maximizing
+
+```math
+v^\pi(s)=\mathbb e_s^\pi\!\left[\sum_{t=0}^{\infty}\gamma^t r(s_t,\pi(s_t))\right].
+```
+
+the number of arithmetic operations must be bounded by a fixed polynomial in $`n,m`$, independent of numerical magnitudes and $`\gamma`$. intermediate rational numbers must have encoding lengths polynomial in the input length.
+
+the target covers arbitrary stochastic transitions and input discounts. a lower bound for one policy-iteration algorithm does not rule out another algorithm.
+
+## background
+
+ordinary polynomial-time solvability follows from linear programming. strong polynomiality additionally separates the number of arithmetic operations from the numerical encoding length.
+
+## known results
+
+ye [1] gives fixed-discount simplex and policy-iteration results. post and ye [2] prove a discount-independent strongly polynomial bound for a particular simplex rule on deterministic mdps.
+
+for general transitions, bellman inequalities $`v(s)\ge r(s,a)+\gamma\sum_t p(t\mid s,a)v(t)`$ form an lp. this gives polynomial bit complexity, not a strongly polynomial operation bound.
+
+the robust-mdp result [4] assumes fixed discount. the claimed howard lower bound [5] concerns a specific algorithm, not this existence question.
+
+## references
+
+1. y. ye. *the simplex and policy-iteration methods are strongly polynomial for the markov decision problem with a fixed discount rate*. mathematics of operations research 36(4), 593–603, 2011. [publication](https://pubsonline.informs.org/doi/abs/10.1287/moor.1110.0516).
+2. i. post, y. ye. *the simplex method is strongly polynomial for deterministic markov decision processes*. mathematics of operations research 40(4), 859–868, 2015. [arxiv:1208.5083v2](https://arxiv.org/abs/1208.5083v2).
+3. t. d. hansen, p. b. miltersen, u. zwick. *strategy iteration is strongly polynomial for 2-player turn-based stochastic games with a constant discount factor*. jacm 60(1), 2013. [arxiv:1008.0530](https://arxiv.org/abs/1008.0530).
+4. h. zhong, y. ye. *linear programming representations and strongly polynomial algorithms for robust markov decision processes*. [arxiv:2610.02131v1](https://arxiv.org/abs/2610.02131v1), submitted 2026-10-01.
+5. h. zhong, y. ye. *policy iteration is not strongly polynomial for deterministic markov decision processes: the price of algorithmic anarchy*. [arxiv:2609.40147v1](https://arxiv.org/abs/2609.40147v1), submitted 2026-09-30.
+"><div class="card-meta"><span>OP-015 · Decision processes and games</span><span class="pill">Problem</span></div><h3>Strongly Polynomial Algorithm for General Discounted MDPs</h3><p>Is there a strongly polynomial exact algorithm for general discounted Markov decision processes when the discount factor is part of the input?</p><div class="research">Status: Unconfirmed</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a><a class="card" href="problems/variable-discount-mdp/index.html" data-area="Decision processes and games" data-status="Needs clarification" data-search="op-016 variable-discount-mdp markov decision processes with an input discount factor decision processes and games problem can discounted markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count? needs clarification 2026-10-07 # markov decision processes with an input discount factor
+
+## problem
+
+can discounted markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count?
+
+## statement
+
+consider a finite stochastic discounted mdp with $`n`$ states, $`m`$ actions, rational rewards and probabilities, and a common rational input discount $`0&lt;\gamma&lt;1`$. seek an exact optimal policy with iterations or arithmetic operations bounded by
+
+```math
+\mathrm{poly}\!\left(n,m,\log\frac1{1-\gamma}\right).
+```
+
+this is different from polynomial time in the complete input bit length. that length also includes rewards, probabilities, and the rational representation of $`\gamma`$; $`\log(1/(1-\gamma))`$ does not describe all those data.
+
+the intended algorithm class and dependencies on reward/probability magnitudes must be specified. the stronger discount-independent operation target is discussed in [strongly polynomial algorithms for mdps](strongly-polynomial-mdp.md).
+
+## background
+
+bit complexity, exact arithmetic-operation counts, and sampling complexity describe different computational models. distinguishing them identifies what remains beyond ordinary lp solvability.
+
+## known results
+
+bellman inequalities give a polynomial-size lp, so polynomial solvability in full input bit length is already available through general lp algorithms [3]. fixed-discount guarantees [1] do not directly provide the displayed input-discount bound.
+
+sidford et al. [2] treats approximate policies under a generative model. its sample-complexity guarantee does not establish the exact arithmetic bound above.
+
+## references
+
+1. y. ye. *the simplex and policy-iteration methods are strongly polynomial for the markov decision problem with a fixed discount rate*. mor 36(4), 593–603, 2011. [publication](https://pubsonline.informs.org/doi/abs/10.1287/moor.1110.0516).
+2. a. sidford, m. wang, x. wu, l. f. yang, y. ye. *near-optimal time and sample complexities for solving markov decision processes with a generative model*. neurips 2018. [arxiv:1806.01492](https://arxiv.org/abs/1806.01492).
+3. l. g. khachiyan. *a polynomial algorithm in linear programming*. soviet mathematics doklady 20, 191–194, 1979.
+"><div class="card-meta"><span>OP-016 · Decision processes and games</span><span class="pill">Problem</span></div><h3>Markov Decision Processes with an Input Discount Factor</h3><p>Can discounted Markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count?</p><div class="research">Status: Needs clarification</div><div class="card-foot"><span>Read problem</span><span>↗</span></div></a></div><p id="empty" class="empty" hidden>No matching problems. Try another keyword, area, or status.</p></section></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>

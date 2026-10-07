@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Mathematical problems in geometry, combinatorial optimization, and decision processes, with precise statements, related results, and references.">
+<title>Planks Covering the Unit Ball · Open Problems</title>
+<link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
+<script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Geometry · Optimization · Decision processes</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / Convex geometry / OP-004</div>
+<section class="detail-head"><span class="eyebrow">OP-004</span><h1>Planks Covering the Unit Ball</h1></section>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Convex geometry</dd><dt>Type</dt><dd>Problem</dd><dt>Status</dt><dd>Solution claimed</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><h2 id="section-1">Problem</h2>
+<p>How much of the unit ball can be covered by planks whose total width is less than its diameter?</p>
+<h2 id="section-2">Statement</h2>
+<p>Let <span class="math inline">$d\ge2$</span> and <span class="math inline">$B^d=\{x\in\mathbb R^d:\|x\|_2\le1\}$</span>. Fix positive widths <span class="math inline">$w_1,\ldots,w_m$</span> with <span class="math inline">$W=\sum_iw_i&lt;2$</span>. A plank of width <span class="math inline">$w_i$</span> has the form <span class="math inline">$P_i=\{x:a_i\le u_i^Tx\le a_i+w_i\}$</span>, where <span class="math inline">$\|u_i\|_2=1$</span>.</p>
+<p>Determine the maximum over all orientations and translations:</p>
+<div class="math block">$$\max_{P_1,\ldots,P_m}\mathrm{vol}_d\!\left(B^d\cap\bigcup_{i=1}^mP_i\right).$$</div>
+<p>The conjectured optimum is attained by parallel planks with disjoint interiors whose union is a single plank of width <span class="math inline">$W$</span> centered at the ball's center. The proposed value is <span class="math inline">$\mathrm{vol}_d(B^d\cap\{|x_1|\le W/2\})$</span>.</p>
+<h2 id="section-3">Background</h2>
+<p>The classical plank theorem concerns complete coverings. Here the width budget is too small for complete coverage, and the objective is covered volume. Different orientations affect both coverage and overlap.</p>
+<h2 id="section-4">Known results</h2>
+<p>Bezdek [2] discusses two-plank, three-dimensional, and some three-plank cases. A lower bound on the width needed for complete coverage does not determine the maximum partial volume.</p>
+<p>Bakaev and Polyanskii [3], in a preprint submitted in July 2026, claim a complete affirmative solution for Euclidean balls. The claim has not been independently verified here.</p>
+<h2 id="section-5">References</h2>
+<ol>
+<li>K. Bezdek, A. Deza, Y. Ye. <em>Selected Open Problems in Discrete Geometry and Optimization</em>, 2013, §1.2. <a href="https://www.cas.mcmaster.ca/~deza/fic2013b.pdf">Chapter</a>.</li>
+<li>K. Bezdek. <em>Tarski's plank problem revisited</em>. Geometry: Intuitive, Discrete, and Convex, 2013; see also <em>Classical Topics in Discrete Geometry</em>, 2010.</li>
+<li>E. Bakaev, A. Polyanskii. <em>Optimal partial plank coverings</em>. <a href="https://arxiv.org/abs/2607.27483v1">arXiv:2607.27483v1</a>, submitted 2026-07-29.</li>
+</ol>
+</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>

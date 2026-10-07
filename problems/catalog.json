@@ -1,0 +1,162 @@
+[
+  {
+    "id": "OP-001",
+    "slug": "antipodal-simplices",
+    "title": "Antipodal Segments and Simplices",
+    "area": "Convex geometry",
+    "type": "Conjecture",
+    "summary": "Is the size of a pairwise antipodal family of segments or $`k`$-simplices in $`\\mathbb R^d`$ at most $`2^{d-k}`$?",
+    "research_status": "Unconfirmed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-002",
+    "slug": "symmetric-body-points",
+    "title": "Points in a Centrally Symmetric Convex Body",
+    "area": "Convex geometry",
+    "type": "Conjecture",
+    "summary": "Does every centrally symmetric convex body in dimension $`n\\ge3`$ contain $`2n`$ points at pairwise distance at least $`\\sqrt2`$ in its own norm?",
+    "research_status": "Unconfirmed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-003",
+    "slug": "convex-set-faces",
+    "title": "Faces of a Compact Convex Set",
+    "area": "Convex geometry",
+    "type": "Conjecture",
+    "summary": "Can every point of a compact convex set be represented using faces with prescribed individual dimension bounds?",
+    "research_status": "Unconfirmed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-004",
+    "slug": "plank-ball-volume",
+    "title": "Planks Covering the Unit Ball",
+    "area": "Convex geometry",
+    "type": "Problem",
+    "summary": "How much of the unit ball can be covered by planks whose total width is less than its diameter?",
+    "research_status": "Solution claimed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-005",
+    "slug": "non-euclidean-simplex-intersection",
+    "title": "Simplex–Ball Intersection in Spherical and Hyperbolic Space",
+    "area": "Convex geometry",
+    "type": "Problem",
+    "summary": "In spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume?",
+    "research_status": "Needs clarification",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-006",
+    "slug": "cube-covering",
+    "title": "Covering a Unit Cube by Smaller Cubes",
+    "area": "Convex geometry",
+    "type": "Problem",
+    "summary": "How many cubes of edge length strictly less than one are needed to cover a unit cube when rotations are allowed?",
+    "research_status": "Unconfirmed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-007",
+    "slug": "boolean-quadric-volume",
+    "title": "Volume of the Boolean Quadric Polytope",
+    "area": "Discrete and combinatorial optimization",
+    "type": "Problem",
+    "summary": "Find an exact volume formula, or improved bounds, for the Boolean quadric polytope of the complete graph.",
+    "research_status": "Partial results",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-008",
+    "slug": "perturbed-grid-triangulations",
+    "title": "Triangulations of Perturbed Square Grids",
+    "area": "Computational geometry",
+    "type": "Conjecture",
+    "summary": "Does every tetrahedralization of a small three-dimensional perturbation of an $`n`$-point planar square grid have $`O(n^{3/2})`$ cells?",
+    "research_status": "Needs clarification",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-009",
+    "slug": "simplex-euler-incenter",
+    "title": "Incenter on the Euler Line of an n-Simplex",
+    "area": "Convex geometry",
+    "type": "Problem",
+    "summary": "Characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid.",
+    "research_status": "Needs clarification",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-010",
+    "slug": "graph-dimension-parameters",
+    "title": "Euclidean, Gram, and Positive Semidefinite Corank Graph Parameters",
+    "area": "Discrete and combinatorial optimization",
+    "type": "Conjecture",
+    "summary": "Do Euclidean dimension, Gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs?",
+    "research_status": "Unconfirmed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-011",
+    "slug": "multicolored-caratheodory",
+    "title": "A Multicolored Carathéodory Conjecture",
+    "area": "Discrete and combinatorial optimization",
+    "type": "Conjecture",
+    "summary": "Can an origin-containing transversal also have distinct row labels within every color class?",
+    "research_status": "Related results",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-012",
+    "slug": "howard-policy-iteration",
+    "title": "Howard's Policy Iteration Complexity for Deterministic MDPs",
+    "area": "Decision processes and games",
+    "type": "Problem",
+    "summary": "Is synchronous Howard policy iteration strongly polynomial for deterministic discounted Markov decision processes with an input discount factor?",
+    "research_status": "Solution claimed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-013",
+    "slug": "deterministic-game-strategy-iteration",
+    "title": "Strategy Iteration Complexity for Deterministic Turn-Based Zero-Sum Games",
+    "area": "Decision processes and games",
+    "type": "Problem",
+    "summary": "Is simple strategy iteration polynomial, or strongly polynomial, for deterministic turn-based zero-sum discounted games?",
+    "research_status": "Needs clarification",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-014",
+    "slug": "game-interior-point",
+    "title": "Interior-Point Algorithms for Discounted Markov Games",
+    "area": "Decision processes and games",
+    "type": "Problem",
+    "summary": "Can a leader-based interior-point algorithm solve discounted Markov games with only logarithmic dependence on the inverse discount gap?",
+    "research_status": "Needs clarification",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-015",
+    "slug": "strongly-polynomial-mdp",
+    "title": "Strongly Polynomial Algorithm for General Discounted MDPs",
+    "area": "Decision processes and games",
+    "type": "Problem",
+    "summary": "Is there a strongly polynomial exact algorithm for general discounted Markov decision processes when the discount factor is part of the input?",
+    "research_status": "Unconfirmed",
+    "updated": "2026-10-07"
+  },
+  {
+    "id": "OP-016",
+    "slug": "variable-discount-mdp",
+    "title": "Markov Decision Processes with an Input Discount Factor",
+    "area": "Decision processes and games",
+    "type": "Problem",
+    "summary": "Can discounted Markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count?",
+    "research_status": "Needs clarification",
+    "updated": "2026-10-07"
+  }
+]

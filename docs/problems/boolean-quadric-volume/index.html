@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Mathematical problems in geometry, combinatorial optimization, and decision processes, with precise statements, related results, and references.">
+<title>Volume of the Boolean Quadric Polytope · Open Problems</title>
+<link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
+<script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Geometry · Optimization · Decision processes</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / Discrete and combinatorial optimization / OP-007</div>
+<section class="detail-head"><span class="eyebrow">OP-007</span><h1>Volume of the Boolean Quadric Polytope</h1></section>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Discrete and combinatorial optimization</dd><dt>Type</dt><dd>Problem</dd><dt>Status</dt><dd>Partial results</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><h2 id="section-1">Problem</h2>
+<p>Find an exact volume formula, or improved bounds, for the Boolean quadric polytope of the complete graph.</p>
+<h2 id="section-2">Statement</h2>
+<p>For <span class="math inline">$n\ge2$</span>, set <span class="math inline">$d=n(n+1)/2$</span> and define</p>
+<div class="math block">$$P_n=\mathrm{conv}\{(x,y)\in\mathbb R^d:x\in\{0,1\}^n,\ y_{ij}=x_ix_j\ (1\le i&lt;j\le n)\}.$$</div>
+<p>Determine <span class="math inline">$\mathrm{vol}_d(P_n)$</span>, or proved bounds <span class="math inline">$a_n,b_n$</span> with <span class="math inline">$0&lt;a_n\le\mathrm{vol}_d(P_n)\le b_n$</span>. The volume is ordinary <span class="math inline">$d$</span>-dimensional Lebesgue volume in these coordinates, not volume multiplied by <span class="math inline">$d!$</span>.</p>
+<p>All pairwise products are included, so the graph is <span class="math inline">$K_n$</span>. A general formula must apply to every <span class="math inline">$n$</span>. Bounds should state their improvement over existing bounds and their range of validity.</p>
+<h2 id="section-3">Background</h2>
+<p>The Boolean quadric polytope linearizes binary quadratic products. Comparing its volume with relaxation volumes measures the extra geometric region introduced by relaxation; this differs from an integrality-gap comparison.</p>
+<h2 id="section-4">Known results</h2>
+<p>The standard relaxation <span class="math inline">$Q_n$</span> is defined, for every <span class="math inline">$i&lt;j$</span>, by</p>
+<div class="math block">$$y_{ij}\ge0,\quad y_{ij}\le x_i,\quad y_{ij}\le x_j,\quad x_i+x_j\le1+y_{ij}$$</div>
+<p>Ko, Lee, and Steingrímsson [1] give the relaxation-volume formula</p>
+<div class="math block">$$\mathrm{vol}_d(Q_n)=\frac{2^{2n-d}n!}{(2n)!}.$$</div>
+<p>Since <span class="math inline">$P_n\subseteq Q_n$</span>, this supplies an upper bound.</p>
+<p>Lee and Skipper [2] study sparse-graph relaxation volumes. Lee [3] claims exact volume computation for series-parallel graphs. General <span class="math inline">$K_n$</span> with <span class="math inline">$n\ge4$</span> is not series-parallel, so that result does not cover the general complete-graph problem.</p>
+<h2 id="section-5">References</h2>
+<ol>
+<li>C.-W. Ko, J. Lee, E. Steingrímsson. <em>The volume of relaxed Boolean-quadric and cut polytopes</em>. Discrete Mathematics 163, 293–298, 1997. <a href="https://www.sciencedirect.com/science/article/pii/0012365X9500343U">Publication</a>.</li>
+<li>J. Lee, D. Skipper. <em>Volume computation for sparse boolean quadric relaxations</em>. <a href="https://arxiv.org/abs/1703.02444v4">arXiv:1703.02444v4</a>.</li>
+<li>J. Lee. <em>Exact volume computation for Boolean quadric polytopes of series-parallel graphs</em>. <a href="https://arxiv.org/abs/2610.00734v1">arXiv:2610.00734v1</a>, submitted 2026-09-30.</li>
+<li>K. Bezdek, A. Deza, Y. Ye. <em>Selected Open Problems in Discrete Geometry and Optimization</em>, 2013, §1.7. <a href="https://www.cas.mcmaster.ca/~deza/fic2013b.pdf">Chapter</a>.</li>
+</ol>
+</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
