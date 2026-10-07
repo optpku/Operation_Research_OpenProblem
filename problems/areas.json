@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "convex-geometry",
+    "name": "Convex geometry",
+    "name_zh": "凸几何",
+    "description": "Convex bodies, simplices, antipodality, coverings, and geometric inequalities.",
+    "maintainers": []
+  },
+  {
+    "slug": "discrete-combinatorial-optimization",
+    "name": "Discrete and combinatorial optimization",
+    "name_zh": "离散与组合优化",
+    "description": "Polytope volumes, graph parameters, and colorful convexity problems.",
+    "maintainers": []
+  },
+  {
+    "slug": "computational-geometry",
+    "name": "Computational geometry",
+    "name_zh": "计算几何",
+    "description": "Triangulations, geometric algorithms, and their complexity.",
+    "maintainers": []
+  },
+  {
+    "slug": "decision-processes-games",
+    "name": "Decision processes and games",
+    "name_zh": "决策过程与博弈",
+    "description": "Markov decision processes, discounted games, and algorithmic complexity.",
+    "maintainers": []
+  }
+]
