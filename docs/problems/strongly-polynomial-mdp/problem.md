@@ -2,8 +2,6 @@
 
 **Proposed by:** Yinyu Ye
 
-## Problem
-
 Is there a strongly polynomial exact algorithm for general discounted Markov decision processes when the discount factor is part of the input?
 
 ## Statement
@@ -17,8 +15,6 @@ v^\pi(s)=\mathbb E_s^\pi\!\left[\sum_{t=0}^{\infty}\gamma^t r(s_t,\pi(s_t))\righ
 ```
 
 The number of arithmetic operations must be bounded by a fixed polynomial in $`N,M`$, independent of numerical magnitudes and $`\gamma`$. Intermediate rational numbers must have encoding lengths polynomial in the input length.
-
-The target covers arbitrary stochastic transitions and input discounts. A lower bound for one policy-iteration algorithm does not rule out another algorithm.
 
 ## Background
 

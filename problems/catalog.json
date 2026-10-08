@@ -7,7 +7,7 @@
     "type": "Conjecture",
     "summary": "Is the size of a pairwise antipodal family of segments or $`k`$-simplices in $`\\mathbb R^d`$ at most $`2^{d-k}`$?",
     "research_status": "Unconfirmed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "convex-geometry",
     "review_status": "Expert reviewed"
   },
@@ -19,7 +19,7 @@
     "type": "Conjecture",
     "summary": "Does every centrally symmetric convex body in dimension $`n\\ge3`$ contain $`2n`$ points at pairwise distance at least $`\\sqrt2`$ in its own norm?",
     "research_status": "Unconfirmed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "convex-geometry",
     "review_status": "Expert reviewed"
   },
@@ -31,7 +31,7 @@
     "type": "Conjecture",
     "summary": "Can every point of a compact convex set be represented using faces with prescribed individual dimension bounds?",
     "research_status": "Unconfirmed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "convex-geometry",
     "review_status": "Expert reviewed"
   },
@@ -43,7 +43,7 @@
     "type": "Problem",
     "summary": "How much of the unit ball can be covered by planks whose total width is less than its diameter?",
     "research_status": "Solution claimed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "convex-geometry",
     "review_status": "Expert reviewed"
   },
@@ -55,7 +55,7 @@
     "type": "Problem",
     "summary": "In spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume?",
     "research_status": "Needs clarification",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "convex-geometry",
     "review_status": "Expert reviewed"
   },
@@ -67,7 +67,7 @@
     "type": "Problem",
     "summary": "How many cubes of edge length strictly less than one are needed to cover a unit cube when rotations are allowed?",
     "research_status": "Unconfirmed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "convex-geometry",
     "review_status": "Expert reviewed"
   },
@@ -79,7 +79,7 @@
     "type": "Problem",
     "summary": "Find an exact volume formula, or improved bounds, for the Boolean quadric polytope of the complete graph.",
     "research_status": "Partial results",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "discrete-combinatorial-optimization",
     "review_status": "Expert reviewed"
   },
@@ -91,7 +91,7 @@
     "type": "Conjecture",
     "summary": "Does every tetrahedralization of a small three-dimensional perturbation of an $`n`$-point planar square grid have $`O(n^{3/2})`$ cells?",
     "research_status": "Needs clarification",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "computational-geometry",
     "review_status": "Expert reviewed"
   },
@@ -103,7 +103,7 @@
     "type": "Problem",
     "summary": "Characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid.",
     "research_status": "Needs clarification",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "convex-geometry",
     "review_status": "Expert reviewed"
   },
@@ -115,7 +115,7 @@
     "type": "Conjecture",
     "summary": "Do Euclidean dimension, Gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs?",
     "research_status": "Unconfirmed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "discrete-combinatorial-optimization",
     "review_status": "Expert reviewed"
   },
@@ -127,7 +127,7 @@
     "type": "Conjecture",
     "summary": "Can an origin-containing transversal also have distinct row labels within every color class?",
     "research_status": "Related results",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "discrete-combinatorial-optimization",
     "review_status": "Expert reviewed"
   },
@@ -139,7 +139,7 @@
     "type": "Problem",
     "summary": "Is synchronous Howard policy iteration strongly polynomial for deterministic discounted Markov decision processes with an input discount factor?",
     "research_status": "Solution claimed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "decision-processes-games",
     "review_status": "Expert reviewed"
   },
@@ -151,7 +151,7 @@
     "type": "Problem",
     "summary": "Is simple strategy iteration polynomial, or strongly polynomial, for deterministic turn-based zero-sum discounted games?",
     "research_status": "Needs clarification",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "decision-processes-games",
     "review_status": "Expert reviewed"
   },
@@ -163,7 +163,7 @@
     "type": "Problem",
     "summary": "Can a leader-based interior-point algorithm solve discounted Markov games with only logarithmic dependence on the inverse discount gap?",
     "research_status": "Needs clarification",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "decision-processes-games",
     "review_status": "Expert reviewed"
   },
@@ -175,7 +175,7 @@
     "type": "Problem",
     "summary": "Is there a strongly polynomial exact algorithm for general discounted Markov decision processes when the discount factor is part of the input?",
     "research_status": "Unconfirmed",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "decision-processes-games",
     "review_status": "Expert reviewed"
   },
@@ -187,7 +187,7 @@
     "type": "Problem",
     "summary": "Can discounted Markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count?",
     "research_status": "Needs clarification",
-    "updated": "2026-10-07",
+    "updated": "2026-10-08",
     "area_slug": "decision-processes-games",
     "review_status": "Expert reviewed"
   }

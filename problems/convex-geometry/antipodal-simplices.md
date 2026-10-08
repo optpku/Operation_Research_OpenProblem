@@ -2,8 +2,6 @@
 
 **Proposed by:** Imre Bárány, Yinyu Ye, Endre Makai, Jr., Horst Martini, and Valeriu Soltan
 
-## Problem
-
 Is the size of a pairwise antipodal family of segments or $`k`$-simplices in $`\mathbb R^d`$ at most $`2^{d-k}`$?
 
 ## Statement
@@ -15,7 +13,7 @@ Determine whether both assertions hold:
 1. For segments ($`k=1`$), $`|S_1|\le2^{d-1}`$.
 2. For $`1\le k\le d-2`$, $`|S_k|\le2^{d-k}`$.
 
-Containment in a supporting hyperplane does not require equality with the supporting face. The segments must have positive length. The segment case and the higher-dimensional extension are separate targets.
+Containment in a supporting hyperplane does not require equality with the supporting face.
 
 ## Background
 

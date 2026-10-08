@@ -2,8 +2,6 @@
 
 **Proposed by:** Włodzimierz Kuperberg and Yinyu Ye
 
-## Problem
-
 How many cubes of edge length strictly less than one are needed to cover a unit cube when rotations are allowed?
 
 ## Statement
@@ -15,8 +13,6 @@ q(n)=\min\{m:C\subseteq\bigcup_{i=1}^m(a_i+R_i[0,\ell_i]^n),\quad 0<\ell_i<1,\ R
 ```
 
 The covering cubes may have different edge lengths, independent translations and rotations, and may extend outside $`C`$. Determine $`q(n)`$ for general $`n`$.
-
-An exact value requires both a covering construction and a matching lower bound. Restricting all cubes to be axis-parallel gives a different problem.
 
 ## Background
 

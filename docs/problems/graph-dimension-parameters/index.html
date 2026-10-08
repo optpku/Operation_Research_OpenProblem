@@ -1,31 +1,30 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5ef"><meta name="description" content="An expert-reviewed operations research and optimization problem library for researchers and AI research agents, maintained by research area.">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Open problems in operations research and optimization.">
 <title>Euclidean, Gram, and Positive Semidefinite Corank Graph Parameters · Open Problems</title>
 <link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
 <script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Operations research · Optimization</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
-<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-discrete-combinatorial-optimization">Discrete and combinatorial optimization</a> / OP-010</div>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems</span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-discrete-combinatorial-optimization">Discrete and combinatorial optimization</a></div>
 <section class="detail-head"><span class="eyebrow">OP-010</span><h1>Euclidean, Gram, and Positive Semidefinite Corank Graph Parameters</h1></section>
-<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Discrete and combinatorial optimization</dd><dt>Area maintainers</dt><dd>To be appointed</dd><dt>Type</dt><dd>Conjecture</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Research status</dt><dd>Unconfirmed</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Monique Laurent, Yinyu Ye, and Antonios Varvitsiotis</p>
-<h2 id="section-1">Problem</h2>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Type</dt><dd>Conjecture</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Status</dt><dd>Unconfirmed</dd><dt>Updated</dt><dd>2026-10-08</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Statement</a><a href="#section-2">Background</a><a href="#section-3">Known results</a><a href="#section-4">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Monique Laurent, Yinyu Ye, and Antonios Varvitsiotis</p>
 <p>Do Euclidean dimension, Gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs?</p>
-<h2 id="section-2">Statement</h2>
+<h2 id="section-1">Statement</h2>
 <p>For a finite simple graph <span class="math inline">$G=(V,E)$</span>, let <span class="math inline">$ed(G)$</span> be the least dimension in which every realizable set of edge-distance data can be realized. Let <span class="math inline">$gd(G)$</span> be the least <span class="math inline">$k$</span> such that every partial Gram matrix specified on diagonal and edge positions and admitting a positive semidefinite completion has a completion of rank at most <span class="math inline">$k$</span>.</p>
 <p>Let <span class="math inline">$\mathcal C(G)$</span> consist of positive semidefinite matrices with zeros at nonedge positions. Define <span class="math inline">$\nu^{=}(G)$</span> as the largest corank of <span class="math inline">$M\in\mathcal C(G)$</span> satisfying the Strong Arnold Property: a symmetric matrix <span class="math inline">$X$</span> with <span class="math inline">$MX=0$</span> and <span class="math inline">$X_{ij}=0$</span> at diagonal and edge positions must satisfy <span class="math inline">$X=0$</span>.</p>
 <p>Let <span class="math inline">$\nabla G$</span> be obtained by adding a vertex adjacent to every vertex of <span class="math inline">$G$</span>. Determine whether each inequality holds for all graphs:</p>
 <div class="math block">$$ed(\nabla G)\le ed(G)+1,\qquad gd(G)\le\nu^{=}(G).$$</div>
-<p>Use consistent conventions for dimension zero, edgeless graphs, and the empty graph; the reverse inequalities depend on those conventions. The two targets are independent.</p>
-<h2 id="section-3">Background</h2>
+<p>The reverse inequalities depend on conventions for dimension zero, edgeless graphs, and the empty graph.</p>
+<h2 id="section-2">Background</h2>
 <p>Edge distances and partial inner products impose different low-dimensional realization constraints. Comparing them with semidefinite corank connects graph structure, geometry, and low-rank matrix completion.</p>
-<h2 id="section-4">Known results</h2>
-<p>Laurent and Varvitsiotis [3] establish <span class="math inline">$ed(\nabla G)=gd(G)$</span> and discusses one-sided bounds and low-dimensional characterizations. Together with the reverse inequalities recorded in [4], the proposed inequalities would yield equalities under consistent definitions. Low-dimensional cases alone do not establish the universal statements.</p>
-<h2 id="section-5">References</h2>
+<h2 id="section-3">Known results</h2>
+<p>Laurent and Varvitsiotis [3] establish <span class="math inline">$ed(\nabla G)=gd(G)$</span> and discuss one-sided bounds and low-dimensional characterizations. Together with the reverse inequalities recorded in [4], the proposed inequalities would yield equalities under consistent definitions. Low-dimensional cases alone do not establish the universal statements.</p>
+<h2 id="section-4">References</h2>
 <ol>
 <li>M. Belk, R. Connelly. <em>Realizability of graphs</em>. Discrete Comput. Geom. 37, 125–137, 2007.</li>
 <li>H. van der Holst. <em>Two tree-width-like graph invariants</em>. Combinatorica 23(4), 633–651, 2003.</li>
 <li>M. Laurent, A. Varvitsiotis. <em>A new graph parameter related to bounded rank positive semidefinite matrix completions</em>. <a href="https://arxiv.org/abs/1204.0734">arXiv:1204.0734</a>; <a href="https://arxiv.org/html/1204.0734v1">preprint text</a>.</li>
 <li>K. Bezdek, A. Deza, Y. Ye. <em>Selected Open Problems in Discrete Geometry and Optimization</em>, 2013. <a href="https://www.cas.mcmaster.ca/~deza/fic2013b.pdf">Chapter</a>.</li>
 </ol>
-</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
+</article></div></main><footer class="footer"><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a></footer></body></html>

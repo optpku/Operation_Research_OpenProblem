@@ -2,8 +2,6 @@
 
 **Proposed by:** Peter Brass and Yinyu Ye
 
-## Problem
-
 Does every tetrahedralization of a small three-dimensional perturbation of an $`n`$-point planar square grid have $`O(n^{3/2})`$ cells?
 
 ## Statement
@@ -16,7 +14,7 @@ For every tetrahedralization $`\mathcal T`$ of the convex hull with vertex set $
 |\mathcal T|\le Cn^{3/2}=Cm^3.
 ```
 
-The displacement allowed relative to the grid spacing and $`m`$, and the permitted dependencies of $`C`$, must be specified. The target concerns every tetrahedralization, not the existence of a small one or only Delaunay tetrahedralizations.
+The bound concerns every tetrahedralization. The allowed displacement relative to the grid spacing and $`m`$, and the dependence of $`C`$ on that displacement, remain to be fixed.
 
 ## Background
 

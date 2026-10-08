@@ -2,8 +2,6 @@
 
 **Proposed by:** Benjamin Matschke and Yinyu Ye
 
-## Problem
-
 Can an origin-containing transversal also have distinct row labels within every color class?
 
 ## Statement
@@ -24,7 +22,7 @@ Partition the column indices as $`C_1\uplus\cdots\uplus C_m=\{1,\ldots,N+1\}`$ w
 
 and $`k_a\ne k_b`$ whenever distinct columns $`a,b`$ belong to the same color class?
 
-Both the convex-hull and label constraints are required. A counterexample at one fixed $`N`$ does not refute a statement for all sufficiently large $`N`$.
+The conjecture concerns all sufficiently large $`N`$.
 
 ## Background
 
@@ -32,7 +30,7 @@ The colorful Carathéodory theorem supplies origin-containing transversals witho
 
 ## Known results
 
-Blagojević, Matschke, and Ziegler [3] prove related colored Tverberg results for prime parameters. Jojić, Panina, and Živaljević [4] treat prime powers and associated color models. Their hypotheses must be compared with the exact threshold and color constraints above.
+Blagojević, Matschke, and Ziegler [3] prove related colored Tverberg results for prime parameters. Jojić, Panina, and Živaljević [4] treat prime powers and associated color models. These results use different threshold and color conditions.
 
 The problem chapter [1] highlights $`r=4,N=9`$, but that instance is not the full asymptotic conjecture.
 

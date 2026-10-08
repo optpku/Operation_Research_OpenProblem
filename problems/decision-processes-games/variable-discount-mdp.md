@@ -2,8 +2,6 @@
 
 **Proposed by:** Yinyu Ye
 
-## Problem
-
 Can discounted Markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count?
 
 ## Statement
@@ -26,7 +24,7 @@ Bit complexity, exact arithmetic-operation counts, and sampling complexity descr
 
 Bellman inequalities give a polynomial-size LP, so polynomial solvability in full input bit length is already available through general LP algorithms [3]. Fixed-discount guarantees [1] do not directly provide the displayed input-discount bound.
 
-Sidford et al. [2] treats approximate policies under a generative model. Its sample-complexity guarantee does not establish the exact arithmetic bound above.
+Sidford et al. [2] treat approximate policies under a generative model. Its sample-complexity guarantee does not establish the exact arithmetic bound above.
 
 ## References
 

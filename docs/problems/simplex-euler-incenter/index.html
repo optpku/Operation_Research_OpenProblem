@@ -1,28 +1,27 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5ef"><meta name="description" content="An expert-reviewed operations research and optimization problem library for researchers and AI research agents, maintained by research area.">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Open problems in operations research and optimization.">
 <title>Incenter on the Euler Line of an n-Simplex · Open Problems</title>
 <link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
 <script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Operations research · Optimization</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
-<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a> / OP-009</div>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems</span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a></div>
 <section class="detail-head"><span class="eyebrow">OP-009</span><h1>Incenter on the Euler Line of an n-Simplex</h1></section>
-<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Convex geometry</dd><dt>Area maintainers</dt><dd>To be appointed</dd><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Research status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Horst Martini and Yinyu Ye</p>
-<h2 id="section-1">Problem</h2>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-08</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Statement</a><a href="#section-2">Background</a><a href="#section-3">Known results</a><a href="#section-4">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Horst Martini and Yinyu Ye</p>
 <p>Characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid.</p>
-<h2 id="section-2">Statement</h2>
+<h2 id="section-1">Statement</h2>
 <p>Let <span class="math inline">$T=\mathrm{conv}\{v_0,\ldots,v_n\}\subset\mathbb R^n$</span> be a nondegenerate simplex with <span class="math inline">$n\ge3$</span>. Write <span class="math inline">$C$</span> for the circumcenter, <span class="math inline">$G=(n+1)^{-1}\sum_iv_i$</span> for the centroid, and <span class="math inline">$I$</span> for the incenter. If <span class="math inline">$C\ne G$</span>, define</p>
 <div class="math block">$$L(T)=\{C+t(G-C):t\in\mathbb R\}.$$</div>
 <p>Find necessary and sufficient geometric conditions for <span class="math inline">$I\in L(T)$</span> for general simplices.</p>
 <p>If <span class="math inline">$C=G$</span>, these centers do not determine a unique line. This case requires a separate convention and should be included in the characterization. General simplices need not be orthocentric.</p>
-<h2 id="section-3">Background</h2>
+<h2 id="section-2">Background</h2>
 <p>The incenter is determined by distances to faces, the circumcenter by distances to vertices, and the centroid by vertex averaging. Their collinearity relates different aspects of simplex geometry.</p>
-<h2 id="section-4">Known results</h2>
-<p>Edmonds, Hajja, and Martini [2] treat orthocentric simplices and relates the incenter-on-Euler-line property to biregularity: vertices split into two regular simplices with equal cross-group edge lengths. This is a special-class result, not a characterization of all simplices.</p>
-<h2 id="section-5">References</h2>
+<h2 id="section-3">Known results</h2>
+<p>Edmonds, Hajja, and Martini [2] treat orthocentric simplices and relate the incenter-on-Euler-line property to biregularity: vertices split into two regular simplices with equal cross-group edge lengths. The general-simplex case remains outside this result.</p>
+<h2 id="section-4">References</h2>
 <ol>
 <li>K. Bezdek, A. Deza, Y. Ye. <em>Selected Open Problems in Discrete Geometry and Optimization</em>, 2013, §1.8. <a href="https://www.cas.mcmaster.ca/~deza/fic2013b.pdf">Chapter</a>.</li>
 <li>A. E. Edmonds, M. Hajja, H. Martini. <em>Orthocentric Simplices and Biregularity</em>. Results Math. 52, 41–50, 2008. <a href="https://link.springer.com/article/10.1007/s00025-008-0294-4">Publication</a>.</li>
 </ol>
-</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
+</article></div></main><footer class="footer"><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a></footer></body></html>

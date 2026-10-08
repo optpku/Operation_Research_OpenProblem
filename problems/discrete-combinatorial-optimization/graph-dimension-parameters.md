@@ -2,8 +2,6 @@
 
 **Proposed by:** Monique Laurent, Yinyu Ye, and Antonios Varvitsiotis
 
-## Problem
-
 Do Euclidean dimension, Gram dimension, and positive semidefinite corank satisfy the proposed universal equalities for graphs?
 
 ## Statement
@@ -18,7 +16,7 @@ Let $`\nabla G`$ be obtained by adding a vertex adjacent to every vertex of $`G`
 ed(\nabla G)\le ed(G)+1,\qquad gd(G)\le\nu^{=}(G).
 ```
 
-Use consistent conventions for dimension zero, edgeless graphs, and the empty graph; the reverse inequalities depend on those conventions. The two targets are independent.
+The reverse inequalities depend on conventions for dimension zero, edgeless graphs, and the empty graph.
 
 ## Background
 
@@ -26,7 +24,7 @@ Edge distances and partial inner products impose different low-dimensional reali
 
 ## Known results
 
-Laurent and Varvitsiotis [3] establish $`ed(\nabla G)=gd(G)`$ and discusses one-sided bounds and low-dimensional characterizations. Together with the reverse inequalities recorded in [4], the proposed inequalities would yield equalities under consistent definitions. Low-dimensional cases alone do not establish the universal statements.
+Laurent and Varvitsiotis [3] establish $`ed(\nabla G)=gd(G)`$ and discuss one-sided bounds and low-dimensional characterizations. Together with the reverse inequalities recorded in [4], the proposed inequalities would yield equalities under consistent definitions. Low-dimensional cases alone do not establish the universal statements.
 
 ## References
 

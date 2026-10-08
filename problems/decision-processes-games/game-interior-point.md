@@ -2,8 +2,6 @@
 
 **Proposed by:** Yinyu Ye
 
-## Problem
-
 Can a leader-based interior-point algorithm solve discounted Markov games with only logarithmic dependence on the inverse discount gap?
 
 ## Statement
@@ -18,7 +16,7 @@ Seek an exact algorithm based on the leader's interior-point method with iterati
 
 rather than a polynomial in $`1/(1-\gamma)`$.
 
-The leader/follower model, interior-point subproblems, output values or strategies, and dependencies on other numerical data must be specified. An approximate method or fixed-discount guarantee alone does not establish this exact-operation bound.
+The leader/follower model, interior-point subproblems, output values or strategies, and dependencies on other numerical data must be specified.
 
 ## Background
 
@@ -26,7 +24,7 @@ Single-player MDPs admit linear-programming formulations, while two-player games
 
 ## Known results
 
-Ye [1] gives a single-player MDP interior-point result with logarithmic discount-gap dependence. Hansen et al. [2] concerns game strategy iteration, not the proposed interior-point method. Zhong and Ye [3] treat related robust MDPs with fixed discount; this does not establish the stated general-game bound.
+Ye [1] gives a single-player MDP interior-point result with logarithmic discount-gap dependence. Hansen et al. [2] concern game strategy iteration, not the proposed interior-point method. Zhong and Ye [3] treat related robust MDPs with fixed discount; this does not establish the stated general-game bound.
 
 ## References
 

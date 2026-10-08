@@ -2,8 +2,6 @@
 
 **Proposed by:** Jon Lee and Yinyu Ye
 
-## Problem
-
 Find an exact volume formula, or improved bounds, for the Boolean quadric polytope of the complete graph.
 
 ## Statement
@@ -16,11 +14,11 @@ P_n=\mathrm{conv}\{(x,y)\in\mathbb R^d:x\in\{0,1\}^n,\ y_{ij}=x_ix_j\ (1\le i<j\
 
 Determine $`\mathrm{vol}_d(P_n)`$, or proved bounds $`a_n,b_n`$ with $`0<a_n\le\mathrm{vol}_d(P_n)\le b_n`$. The volume is ordinary $`d`$-dimensional Lebesgue volume in these coordinates, not volume multiplied by $`d!`$.
 
-All pairwise products are included, so the graph is $`K_n`$. A general formula must apply to every $`n`$. Bounds should state their improvement over existing bounds and their range of validity.
+The graph is $`K_n`$; the formula or bounds should hold for all $`n`$.
 
 ## Background
 
-The Boolean quadric polytope linearizes binary quadratic products. Comparing its volume with relaxation volumes measures the extra geometric region introduced by relaxation; this differs from an integrality-gap comparison.
+The Boolean quadric polytope linearizes binary quadratic products. Comparing its volume with relaxation volumes measures the extra geometric region introduced by relaxation.
 
 ## Known results
 

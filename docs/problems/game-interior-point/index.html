@@ -1,30 +1,29 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5ef"><meta name="description" content="An expert-reviewed operations research and optimization problem library for researchers and AI research agents, maintained by research area.">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Open problems in operations research and optimization.">
 <title>Interior-Point Algorithms for Discounted Markov Games · Open Problems</title>
 <link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
 <script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Operations research · Optimization</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
-<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-decision-processes-games">Decision processes and games</a> / OP-014</div>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems</span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-decision-processes-games">Decision processes and games</a></div>
 <section class="detail-head"><span class="eyebrow">OP-014</span><h1>Interior-Point Algorithms for Discounted Markov Games</h1></section>
-<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Decision processes and games</dd><dt>Area maintainers</dt><dd>To be appointed</dd><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Research status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Yinyu Ye</p>
-<h2 id="section-1">Problem</h2>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-08</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Statement</a><a href="#section-2">Background</a><a href="#section-3">Known results</a><a href="#section-4">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Yinyu Ye</p>
 <p>Can a leader-based interior-point algorithm solve discounted Markov games with only logarithmic dependence on the inverse discount gap?</p>
-<h2 id="section-2">Statement</h2>
+<h2 id="section-1">Statement</h2>
 <p>Consider a finite turn-based two-player zero-sum Markov game with rational costs and transition probabilities. States belong to the minimizing or maximizing player. Let <span class="math inline">$N,M$</span> be the state and action counts, and let the common rational discount satisfy <span class="math inline">$0&lt;\gamma&lt;1$</span>.</p>
 <p>Seek an exact algorithm based on the leader's interior-point method with iterations or arithmetic operations bounded by</p>
 <div class="math block">$$\mathrm{poly}\!\left(N,M,\log\frac1{1-\gamma}\right)$$</div>
 <p>rather than a polynomial in <span class="math inline">$1/(1-\gamma)$</span>.</p>
-<p>The leader/follower model, interior-point subproblems, output values or strategies, and dependencies on other numerical data must be specified. An approximate method or fixed-discount guarantee alone does not establish this exact-operation bound.</p>
-<h2 id="section-3">Background</h2>
+<p>The leader/follower model, interior-point subproblems, output values or strategies, and dependencies on other numerical data must be specified.</p>
+<h2 id="section-2">Background</h2>
 <p>Single-player MDPs admit linear-programming formulations, while two-player games add minimax and best-response structure. The question is whether an interior-point analysis can retain favorable discount dependence in that setting.</p>
-<h2 id="section-4">Known results</h2>
-<p>Ye [1] gives a single-player MDP interior-point result with logarithmic discount-gap dependence. Hansen et al. [2] concerns game strategy iteration, not the proposed interior-point method. Zhong and Ye [3] treat related robust MDPs with fixed discount; this does not establish the stated general-game bound.</p>
-<h2 id="section-5">References</h2>
+<h2 id="section-3">Known results</h2>
+<p>Ye [1] gives a single-player MDP interior-point result with logarithmic discount-gap dependence. Hansen et al. [2] concern game strategy iteration, not the proposed interior-point method. Zhong and Ye [3] treat related robust MDPs with fixed discount; this does not establish the stated general-game bound.</p>
+<h2 id="section-4">References</h2>
 <ol>
 <li>Y. Ye. <em>A new complexity result on solving the Markov decision problem</em>. MOR 30(3), 733–749, 2005. <a href="https://pubsonline.informs.org/doi/10.1287/moor.1050.0149">Publication</a>.</li>
 <li>T. D. Hansen, P. B. Miltersen, U. Zwick. <em>Strategy iteration is strongly polynomial for 2-player turn-based stochastic games with a constant discount factor</em>. JACM 60(1), 2013. <a href="https://arxiv.org/abs/1008.0530">arXiv:1008.0530</a>.</li>
 <li>H. Zhong, Y. Ye. <em>Linear Programming Representations and Strongly Polynomial Algorithms for Robust Markov Decision Processes</em>. <a href="https://arxiv.org/abs/2610.02131v1">arXiv:2610.02131v1</a>, 2026.</li>
 </ol>
-</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
+</article></div></main><footer class="footer"><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a></footer></body></html>

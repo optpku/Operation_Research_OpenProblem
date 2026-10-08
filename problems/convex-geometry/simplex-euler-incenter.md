@@ -2,8 +2,6 @@
 
 **Proposed by:** Horst Martini and Yinyu Ye
 
-## Problem
-
 Characterize higher-dimensional simplices whose incenter lies on the line through the circumcenter and centroid.
 
 ## Statement
@@ -24,7 +22,7 @@ The incenter is determined by distances to faces, the circumcenter by distances 
 
 ## Known results
 
-Edmonds, Hajja, and Martini [2] treat orthocentric simplices and relates the incenter-on-Euler-line property to biregularity: vertices split into two regular simplices with equal cross-group edge lengths. This is a special-class result, not a characterization of all simplices.
+Edmonds, Hajja, and Martini [2] treat orthocentric simplices and relate the incenter-on-Euler-line property to biregularity: vertices split into two regular simplices with equal cross-group edge lengths. The general-simplex case remains outside this result.
 
 ## References
 

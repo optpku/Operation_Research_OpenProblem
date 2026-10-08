@@ -1,29 +1,28 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5ef"><meta name="description" content="An expert-reviewed operations research and optimization problem library for researchers and AI research agents, maintained by research area.">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Open problems in operations research and optimization.">
 <title>Simplex–Ball Intersection in Spherical and Hyperbolic Space · Open Problems</title>
 <link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
 <script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Operations research · Optimization</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
-<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a> / OP-005</div>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems</span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a></div>
 <section class="detail-head"><span class="eyebrow">OP-005</span><h1>Simplex–Ball Intersection in Spherical and Hyperbolic Space</h1></section>
-<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Convex geometry</dd><dt>Area maintainers</dt><dd>To be appointed</dd><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Research status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Gábor Fejes Tóth and Yinyu Ye</p>
-<h2 id="section-1">Problem</h2>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-08</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Statement</a><a href="#section-2">Background</a><a href="#section-3">Known results</a><a href="#section-4">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Gábor Fejes Tóth and Yinyu Ye</p>
 <p>In spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume?</p>
-<h2 id="section-2">Statement</h2>
+<h2 id="section-1">Statement</h2>
 <p>Use geodesic volume in spherical space <span class="math inline">$S^d$</span> or hyperbolic space <span class="math inline">$H^d$</span>. Fix a geodesic ball <span class="math inline">$B$</span> and an admissible simplex volume <span class="math inline">$V$</span>. For every nondegenerate geodesic <span class="math inline">$d$</span>-simplex <span class="math inline">$T$</span> of volume <span class="math inline">$V$</span>, is</p>
 <div class="math block">$$\mathrm{vol}_d(B\cap T)\le\mathrm{vol}_d(B\cap T_{\rm reg}),$$</div>
 <p>where <span class="math inline">$T_{\rm reg}$</span> is a regular simplex of volume <span class="math inline">$V$</span> concentric with <span class="math inline">$B$</span>?</p>
-<p>Both geometries are included, particularly dimensions beyond two. In the spherical case, the hemisphere/convexity convention, ball radius, admissible volumes, and existence of the comparison simplex must be specified.</p>
-<h2 id="section-3">Background</h2>
+<p>In the spherical case, the hemisphere and convexity conventions, ball radius, admissible volumes, and existence of the comparison simplex remain to be fixed.</p>
+<h2 id="section-2">Background</h2>
 <p>Euclidean symmetrization favors regular simplices in several volume problems. Curvature changes this argument, while fixing the simplex volume and maximizing its intersection with a ball also requires control of relative position.</p>
-<h2 id="section-4">Known results</h2>
+<h2 id="section-3">Known results</h2>
 <p>The problem chapter [1] records the Euclidean analogue. Böröczky [2] and Peyerimhoff [3] study maximal-volume simplices in spherical or hyperbolic balls. Those inscribed-volume results have different constraints and do not directly establish the fixed-volume intersection inequality.</p>
-<h2 id="section-5">References</h2>
+<h2 id="section-4">References</h2>
 <ol>
 <li>K. Bezdek, A. Deza, Y. Ye. <em>Selected Open Problems in Discrete Geometry and Optimization</em>, 2013, §1.5. <a href="https://www.cas.mcmaster.ca/~deza/fic2013b.pdf">Chapter</a>.</li>
 <li>K. Böröczky. <em>On an extremum property of the regular simplex in Sᵈ</em>. Intuitive Geometry, 117–121, 1987.</li>
 <li>N. Peyerimhoff. <em>Simplices of maximal volume or minimal total edge length in hyperbolic space</em>. J. London Math. Soc. 66(3), 753–768, 2002.</li>
 </ol>
-</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
+</article></div></main><footer class="footer"><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a></footer></body></html>

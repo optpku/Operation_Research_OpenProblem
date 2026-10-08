@@ -2,8 +2,6 @@
 
 **Proposed by:** Gábor Fejes Tóth and Yinyu Ye
 
-## Problem
-
 In spherical or hyperbolic space, does a concentric regular simplex maximize intersection with a fixed ball among simplices of a fixed volume?
 
 ## Statement
@@ -16,7 +14,7 @@ Use geodesic volume in spherical space $`S^d`$ or hyperbolic space $`H^d`$. Fix 
 
 where $`T_{\rm reg}`$ is a regular simplex of volume $`V`$ concentric with $`B`$?
 
-Both geometries are included, particularly dimensions beyond two. In the spherical case, the hemisphere/convexity convention, ball radius, admissible volumes, and existence of the comparison simplex must be specified.
+In the spherical case, the hemisphere and convexity conventions, ball radius, admissible volumes, and existence of the comparison simplex remain to be fixed.
 
 ## Background
 

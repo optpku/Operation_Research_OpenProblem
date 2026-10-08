@@ -1,28 +1,27 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5ef"><meta name="description" content="An expert-reviewed operations research and optimization problem library for researchers and AI research agents, maintained by research area.">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Open problems in operations research and optimization.">
 <title>Faces of a Compact Convex Set · Open Problems</title>
 <link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
 <script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Operations research · Optimization</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
-<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a> / OP-003</div>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems</span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a></div>
 <section class="detail-head"><span class="eyebrow">OP-003</span><h1>Faces of a Compact Convex Set</h1></section>
-<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Convex geometry</dd><dt>Area maintainers</dt><dd>To be appointed</dd><dt>Type</dt><dd>Conjecture</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Research status</dt><dd>Unconfirmed</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Valeriu Soltan and Yinyu Ye</p>
-<h2 id="section-1">Problem</h2>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Type</dt><dd>Conjecture</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Status</dt><dd>Unconfirmed</dd><dt>Updated</dt><dd>2026-10-08</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Statement</a><a href="#section-2">Background</a><a href="#section-3">Known results</a><a href="#section-4">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Valeriu Soltan and Yinyu Ye</p>
 <p>Can every point of a compact convex set be represented using faces with prescribed individual dimension bounds?</p>
-<h2 id="section-2">Statement</h2>
+<h2 id="section-1">Statement</h2>
 <p>Let <span class="math inline">$K\subset\mathbb R^n$</span> be a nonempty compact convex set. Let positive integers <span class="math inline">$n_1,\ldots,n_s$</span> satisfy <span class="math inline">$\sum_{i=1}^s n_i=n+1$</span>. For every <span class="math inline">$z\in K$</span>, do there exist nonempty faces <span class="math inline">$F_1,\ldots,F_s$</span> such that</p>
 <div class="math block">$$z\in\mathrm{conv}(F_1\cup\cdots\cup F_s),\qquad \dim F_i\le n_i-1\quad(1\le i\le s)?$$</div>
 <p>A face has the usual convex-analysis meaning: if the relative interior of a segment in <span class="math inline">$K$</span> meets <span class="math inline">$F$</span>, both endpoints lie in <span class="math inline">$F$</span>. The improper face <span class="math inline">$K$</span> is allowed; faces need not be exposed. Dimension means affine dimension, and <span class="math inline">$K$</span> need not be full-dimensional.</p>
-<h2 id="section-3">Background</h2>
+<h2 id="section-2">Background</h2>
 <p>Extreme-point representations use zero-dimensional faces. This problem allows higher-dimensional faces but assigns a separate dimension budget to each, connecting convex representations with the face structure of the set.</p>
-<h2 id="section-4">Known results</h2>
+<h2 id="section-3">Known results</h2>
 <p>The problem chapter [1] states the polytopal case. If <span class="math inline">$s=1$</span>, take <span class="math inline">$F_1=K$</span>. If every <span class="math inline">$n_i=1$</span>, the question reduces to representation by extreme points. Mixed dimension budgets for general compact convex sets are the remaining target.</p>
 <p>Soltan's slides [2] discuss related face-representation results.</p>
-<h2 id="section-5">References</h2>
+<h2 id="section-4">References</h2>
 <ol>
 <li>K. Bezdek, A. Deza, Y. Ye. <em>Selected Open Problems in Discrete Geometry and Optimization</em>, 2013, §1.10, Conjecture 2. <a href="https://www.cas.mcmaster.ca/~deza/fic2013b.pdf">Chapter</a>.</li>
 <li>V. Soltan. <em>Carathéodory-type Results for Faces of Convex Sets</em>. Talk on joint work with Jim Lawrence. <a href="https://www.fields.utoronto.ca/talk-media/1/85/64/slides.pdf">Fields Institute slides</a>.</li>
 </ol>
-</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
+</article></div></main><footer class="footer"><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a></footer></body></html>

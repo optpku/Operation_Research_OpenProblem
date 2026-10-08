@@ -2,8 +2,6 @@
 
 **Proposed by:** Yinyu Ye
 
-## Problem
-
 Is simple strategy iteration polynomial, or strongly polynomial, for deterministic turn-based zero-sum discounted games?
 
 ## Statement

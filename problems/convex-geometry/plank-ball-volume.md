@@ -2,8 +2,6 @@
 
 **Proposed by:** Károly Bezdek and Yinyu Ye
 
-## Problem
-
 How much of the unit ball can be covered by planks whose total width is less than its diameter?
 
 ## Statement
@@ -26,7 +24,7 @@ The classical plank theorem concerns complete coverings. Here the width budget i
 
 Bezdek [2] discusses two-plank, three-dimensional, and some three-plank cases. A lower bound on the width needed for complete coverage does not determine the maximum partial volume.
 
-Bakaev and Polyanskii [3], in a preprint submitted in July 2026, claim a complete affirmative solution for Euclidean balls. The claim has not been independently verified here.
+Bakaev and Polyanskii [3], in a preprint submitted in July 2026, claim a complete affirmative solution for Euclidean balls. Verification is pending.
 
 ## References
 

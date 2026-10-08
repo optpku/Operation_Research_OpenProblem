@@ -2,13 +2,6 @@
 
 **Proposed by:** Names of the problem proposers.
 
-<!-- Save under problems/<area_slug>/<slug>.md and add a catalog.json entry.
-Use an area_slug defined in problems/areas.json, with its matching area name.
-Include id, slug, title, area, area_slug, type, summary, review_status,
-research_status, and updated (YYYY-MM-DD). New submissions: Pending review.
-The area maintainer updates review_status after expert review. -->
-
-## Problem
 State the question briefly.
 
 ## Statement

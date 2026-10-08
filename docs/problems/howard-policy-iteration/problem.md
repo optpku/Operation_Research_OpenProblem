@@ -2,8 +2,6 @@
 
 **Proposed by:** Yinyu Ye
 
-## Problem
-
 Is synchronous Howard policy iteration strongly polynomial for deterministic discounted Markov decision processes with an input discount factor?
 
 ## Statement
@@ -26,7 +24,7 @@ Deterministic transitions simplify the model but do not make synchronous policy 
 
 Ye [1] gives fixed-discount guarantees. Post and Ye [2] give a discount-independent strongly polynomial bound for a specific simplex rule on deterministic MDPs.
 
-Zhong and Ye [4], in a preprint submitted in September 2026, claim exponentially many Howard improvements on deterministic MDPs, even with two actions per state. The claim has not been independently verified here. It concerns Howard's algorithm, not the existence of a different strongly polynomial algorithm.
+Zhong and Ye [4], in a preprint submitted in September 2026, claim exponentially many Howard improvements on deterministic MDPs, even with two actions per state. Verification is pending.
 
 ## References
 

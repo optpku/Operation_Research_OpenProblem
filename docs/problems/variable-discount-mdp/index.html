@@ -1,30 +1,29 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5ef"><meta name="description" content="An expert-reviewed operations research and optimization problem library for researchers and AI research agents, maintained by research area.">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Open problems in operations research and optimization.">
 <title>Markov Decision Processes with an Input Discount Factor · Open Problems</title>
 <link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
 <script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Operations research · Optimization</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
-<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-decision-processes-games">Decision processes and games</a> / OP-016</div>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems</span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-decision-processes-games">Decision processes and games</a></div>
 <section class="detail-head"><span class="eyebrow">OP-016</span><h1>Markov Decision Processes with an Input Discount Factor</h1></section>
-<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Decision processes and games</dd><dt>Area maintainers</dt><dd>To be appointed</dd><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Research status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Yinyu Ye</p>
-<h2 id="section-1">Problem</h2>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Type</dt><dd>Problem</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Status</dt><dd>Needs clarification</dd><dt>Updated</dt><dd>2026-10-08</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Statement</a><a href="#section-2">Background</a><a href="#section-3">Known results</a><a href="#section-4">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Yinyu Ye</p>
 <p>Can discounted Markov decision processes with an input discount factor be solved exactly with only logarithmic discount-gap dependence in the arithmetic-operation count?</p>
-<h2 id="section-2">Statement</h2>
+<h2 id="section-1">Statement</h2>
 <p>Consider a finite stochastic discounted MDP with <span class="math inline">$N$</span> states, <span class="math inline">$M$</span> actions, rational rewards and probabilities, and a common rational input discount <span class="math inline">$0&lt;\gamma&lt;1$</span>. Seek an exact optimal policy with iterations or arithmetic operations bounded by</p>
 <div class="math block">$$\mathrm{poly}\!\left(N,M,\log\frac1{1-\gamma}\right).$$</div>
 <p>This is different from polynomial time in the complete input bit length. That length also includes rewards, probabilities, and the rational representation of <span class="math inline">$\gamma$</span>; <span class="math inline">$\log(1/(1-\gamma))$</span> does not describe all those data.</p>
 <p>The intended algorithm class and dependencies on reward/probability magnitudes must be specified. The stronger discount-independent operation target is discussed in <a href="../strongly-polynomial-mdp/index.html">Strongly Polynomial Algorithms for MDPs</a>.</p>
-<h2 id="section-3">Background</h2>
+<h2 id="section-2">Background</h2>
 <p>Bit complexity, exact arithmetic-operation counts, and sampling complexity describe different computational models. Distinguishing them identifies what remains beyond ordinary LP solvability.</p>
-<h2 id="section-4">Known results</h2>
+<h2 id="section-3">Known results</h2>
 <p>Bellman inequalities give a polynomial-size LP, so polynomial solvability in full input bit length is already available through general LP algorithms [3]. Fixed-discount guarantees [1] do not directly provide the displayed input-discount bound.</p>
-<p>Sidford et al. [2] treats approximate policies under a generative model. Its sample-complexity guarantee does not establish the exact arithmetic bound above.</p>
-<h2 id="section-5">References</h2>
+<p>Sidford et al. [2] treat approximate policies under a generative model. Its sample-complexity guarantee does not establish the exact arithmetic bound above.</p>
+<h2 id="section-4">References</h2>
 <ol>
 <li>Y. Ye. <em>The simplex and policy-iteration methods are strongly polynomial for the Markov decision problem with a fixed discount rate</em>. MOR 36(4), 593–603, 2011. <a href="https://pubsonline.informs.org/doi/abs/10.1287/moor.1110.0516">Publication</a>.</li>
 <li>A. Sidford, M. Wang, X. Wu, L. F. Yang, Y. Ye. <em>Near-Optimal Time and Sample Complexities for Solving Markov Decision Processes with a Generative Model</em>. NeurIPS 2018. <a href="https://arxiv.org/abs/1806.01492">arXiv:1806.01492</a>.</li>
 <li>L. G. Khachiyan. <em>A polynomial algorithm in linear programming</em>. Soviet Mathematics Doklady 20, 191–194, 1979.</li>
 </ol>
-</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
+</article></div></main><footer class="footer"><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a></footer></body></html>

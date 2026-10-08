@@ -2,8 +2,6 @@
 
 **Proposed by:** Zsolt Langi and Yinyu Ye
 
-## Problem
-
 Does every centrally symmetric convex body in dimension $`n\ge3`$ contain $`2n`$ points at pairwise distance at least $`\sqrt2`$ in its own norm?
 
 ## Statement

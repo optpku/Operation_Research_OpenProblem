@@ -1,31 +1,30 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#f5f5ef"><meta name="description" content="An expert-reviewed operations research and optimization problem library for researchers and AI research agents, maintained by research area.">
+<meta name="theme-color" content="#f5f5ef"><meta name="description" content="Open problems in operations research and optimization.">
 <title>Points in a Centrally Symmetric Convex Body · Open Problems</title>
 <link rel="icon" href="../../assets/favicon.svg"><link rel="stylesheet" href="../../vendor/katex/katex.min.css"><link rel="stylesheet" href="../../assets/styles.css">
 <script defer src="../../vendor/katex/katex.min.js"></script><script defer src="../../vendor/katex/auto-render.min.js"></script><script defer src="../../assets/app.js"></script></head>
 <body><a class="skip-link" href="#main">Skip to content</a>
-<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems<small>Operations research · Optimization</small></span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
-<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a> / OP-002</div>
+<header class="header"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">∴</span><span>Open Problems</span></a><nav aria-label="Main navigation"><a href="../../index.html#library">Problems</a><a href="https://github.com/optpku/Operation_Research_OpenProblem/issues">Discuss</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub ↗</a></nav></header>
+<main id="main"><div class="breadcrumbs"><a href="../../index.html#library">Problems</a> / <a href="../../index.html#area-convex-geometry">Convex geometry</a></div>
 <section class="detail-head"><span class="eyebrow">OP-002</span><h1>Points in a Centrally Symmetric Convex Body</h1></section>
-<div class="detail-layout"><aside class="sidebar"><dl><dt>Area</dt><dd>Convex geometry</dd><dt>Area maintainers</dt><dd>To be appointed</dd><dt>Type</dt><dd>Conjecture</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Research status</dt><dd>Unconfirmed</dd><dt>Updated</dt><dd>2026-10-07</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Download Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Problem</a><a href="#section-2">Statement</a><a href="#section-3">Background</a><a href="#section-4">Known results</a><a href="#section-5">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Zsolt Langi and Yinyu Ye</p>
-<h2 id="section-1">Problem</h2>
+<div class="detail-layout"><aside class="sidebar"><dl><dt>Type</dt><dd>Conjecture</dd><dt>Review</dt><dd>Expert reviewed</dd><dt>Status</dt><dd>Unconfirmed</dd><dt>Updated</dt><dd>2026-10-08</dd></dl><div class="buttons"><a class="button" href="problem.md" download>Markdown ↓</a></div><nav class="toc" aria-label="On this page"><a href="#section-1">Statement</a><a href="#section-2">Background</a><a href="#section-3">Known results</a><a href="#section-4">References</a></nav></aside><article class="article"><p><strong>Proposed by:</strong> Zsolt Langi and Yinyu Ye</p>
 <p>Does every centrally symmetric convex body in dimension <span class="math inline">$n\ge3$</span> contain <span class="math inline">$2n$</span> points at pairwise distance at least <span class="math inline">$\sqrt2$</span> in its own norm?</p>
-<h2 id="section-2">Statement</h2>
+<h2 id="section-1">Statement</h2>
 <p>Let <span class="math inline">$C\subset\mathbb R^n$</span> be compact and convex, with nonempty interior and <span class="math inline">$C=-C$</span>. Define</p>
 <div class="math block">$$\|x\|_C=\inf\{t&gt;0:x\in tC\}.$$</div>
 <p>For every <span class="math inline">$n\ge3$</span> and every integer <span class="math inline">$n+2\le k\le2n$</span>, must there exist <span class="math inline">$p_1,\ldots,p_k\in C$</span> such that</p>
 <div class="math block">$$\|p_i-p_j\|_C\ge\sqrt2\qquad(1\le i&lt;j\le k)?$$</div>
 <p>It is enough to prove the case <span class="math inline">$k=2n$</span>, since smaller configurations can be obtained by taking subsets. The distance is measured in the norm induced by <span class="math inline">$C$</span>, not necessarily in the Euclidean norm.</p>
-<h2 id="section-3">Background</h2>
+<h2 id="section-2">Background</h2>
 <p>The question compares finite packing in Euclidean and general normed spaces. Central symmetry defines a norm, but provides much less structure than the rotational symmetry of a Euclidean ball.</p>
-<h2 id="section-4">Known results</h2>
+<h2 id="section-3">Known results</h2>
 <p>For the Euclidean unit ball, <span class="math inline">$\{\pm e_1,\ldots,\pm e_n\}$</span> gives <span class="math inline">$2n$</span> points with the required separation. Rankin [1] studies the corresponding spherical-code problem.</p>
 <p>Doyle, Lagarias, and Randall [2] give the related planar self-packing result with four separated points. The question here concerns arbitrary centrally symmetric bodies in dimensions at least three.</p>
-<h2 id="section-5">References</h2>
+<h2 id="section-4">References</h2>
 <ol>
 <li>R. A. Rankin. <em>The closest packing of spherical caps in n dimensions</em>. Proc. Glasgow Math. Assoc. 2, 139–144, 1955. <a href="https://doi.org/10.1017/S2040618500033219">Publication</a>.</li>
 <li>P. G. Doyle, J. C. Lagarias, D. Randall. <em>Self-packing of centrally symmetric convex bodies in R²</em>. Discrete &amp; Computational Geometry 8, 171–189, 1992. <a href="https://doi.org/10.1007/BF02293042">DOI</a>; <a href="https://websites.umich.edu/~lagarias/PUBLICATIONS/tilings.html">author bibliography</a>.</li>
 <li>J. Aczél. <em>Solution to Problem 35</em> (in Hungarian). Mat. Lapok 3, 94–95, 1952.</li>
 </ol>
-</article></div></main><footer class="footer"><strong>Open Problems</strong><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/optpku/Operation_Research_OpenProblem">GitHub repository ↗</a></footer></body></html>
+</article></div></main><footer class="footer"><a href="https://github.com/optpku/Operation_Research_OpenProblem/blob/main/LICENSE">Apache-2.0</a></footer></body></html>
